@@ -62,3 +62,1026 @@ FOREIGN KEY ("user_id")
   [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
   [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT  "proposals".* FROM "proposals" WHERE "proposals"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+Started GET "/" for 127.0.0.1 at 2017-06-13 09:53:12 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (4.6ms)
+Completed 200 OK in 24ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-06-13 09:53:16 -0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 632ms (Views: 624.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 09:53:22 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (140.8ms)
+Completed 500 Internal Server Error in 151ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposal_path' for #<#<Class:0x007f82989de618>:0x007f82989cdea8>):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', proposal %></td>
+    20:         <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
+    21:         <td><%= link_to 'Destroy', proposal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    22:       </tr>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb___4431249663022180022_70099441483140'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb___4431249663022180022_70099441483140'
+Started GET "/cable" for 127.0.0.1 at 2017-06-13 09:53:33 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-06-13 09:53:33 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "RoomChannel"
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 09:56:49 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (169.9ms)
+Completed 500 Internal Server Error in 175ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_proposal' for #<#<Class:0x007f82989de618>:0x007f82999ff790>
+Did you mean?  user_proposal_url):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show',  user_proposal %></td>
+    20:         <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
+    21:         <td><%= link_to 'Destroy', proposal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    22:       </tr>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb___4431249663022180022_70099449643220'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb___4431249663022180022_70099449643220'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 09:57:17 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"proposals", :user_id=>"1"}, missing required keys: [:id]):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show',  user_proposal_url %></td>
+    20:         <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
+    21:         <td><%= link_to 'Destroy', proposal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    22:       </tr>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb___4431249663022180022_70099449616200'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb___4431249663022180022_70099449616200'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 09:57:37 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (92.3ms)
+Completed 500 Internal Server Error in 97ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposal_path' for #<#<Class:0x007f82989de618>:0x007f8299a86218>):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', proposal %></td>
+    20:         <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
+    21:         <td><%= link_to 'Destroy', proposal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    22:       </tr>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb___4431249663022180022_70099450213880'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb___4431249663022180022_70099450213880'
+Started GET "/users/1" for 127.0.0.1 at 2017-06-13 09:58:04 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2017-06-13 09:58:10 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (11.6ms) [cache miss]
+  Rendered users/edit.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2017-06-13 09:58:12 -0700
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R7SZpY0vxUQZ2yWJR2gvTlN+132mqdHIxQuA738zc1V6VCoIIKGrCBfuJIQom973jV4x68sPiFsxKpBcAl/+bA==", "commit"=>"Update User", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-06-13 09:58:12 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-06-13 09:58:14 -0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-06-13 09:58:17 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 09:58:24 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (88.3ms)
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposal_path' for #<#<Class:0x007f82989de618>:0x007f8298ee5fd0>):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', proposal %></td>
+    20:         <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
+    21:         <td><%= link_to 'Destroy', proposal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    22:       </tr>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb___4431249663022180022_70099444118760'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb___4431249663022180022_70099444118760'
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-13 09:59:58 -0700
+Processing by BucketsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering buckets/index.html.erb within layouts/application
+  [1m[36mBucket Load (0.2ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+  Rendered buckets/index.html.erb within layouts/application (164.9ms)
+Completed 500 Internal Server Error in 174ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_bucket_path' for #<#<Class:0x007f8298d67168>:0x007f8298d65390>
+Did you mean?  new_user_path
+               user_bucket_path):
+    26: 
+    27: <br>
+    28: 
+    29: <%= link_to 'New Bucket', new_bucket_path %>
+  
+app/views/buckets/index.html.erb:29:in `_app_views_buckets_index_html_erb___3750623994682526051_70099443334460'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:00:31 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (97.6ms)
+Completed 500 Internal Server Error in 103ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposal_path' for #<#<Class:0x007f82989de618>:0x007f82927de530>):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:        <!--  <td><%= link_to 'Show', proposal %></td>
+    20:         <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
+    21:         <td><%= link_to 'Destroy', proposal, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+    22:       </tr>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb___4431249663022180022_70099390111840'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb___4431249663022180022_70099390111840'
+Started GET "/users/1" for 127.0.0.1 at 2017-06-13 10:01:34 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 188ms (Views: 160.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-06-13 10:01:36 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-06-13 10:01:36 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "RoomChannel"
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:01:49 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.1ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (118.4ms)
+Completed 500 Internal Server Error in 129ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposal_path' for #<#<Class:0x007fb952cacb38>:0x007fb954d3a698>):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', proposal %></td>
+    20:         <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
+    21:         <td><%= link_to 'Destroy', proposal, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
+    22:       </tr>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb__520747830682147322_70216967353200'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb__520747830682147322_70216967353200'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:05:02 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (187.5ms)
+Completed 500 Internal Server Error in 193ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_proposal' for #<#<Class:0x007fb952cacb38>:0x007fb954a93c50>
+Did you mean?  user_proposal_url):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', user_proposal %></td>
+    20:         <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
+    21:         <td><%= link_to 'Destroy', proposal, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
+    22:       </tr>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb__520747830682147322_70216983053880'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb__520747830682147322_70216983053880'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:05:14 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"proposals", :user_id=>"1"}, missing required keys: [:id]):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', user_proposal_path %></td>
+    20:         <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
+    21:         <td><%= link_to 'Destroy', proposal, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
+    22:       </tr>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb__520747830682147322_70216921277580'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb__520747830682147322_70216921277580'
+Started POST "/__web_console/repl_sessions/23fce8f66e46b5158416ca1a3cb814e4/trace" for 127.0.0.1 at 2017-06-13 10:05:15 -0700
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:05:35 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (85.5ms)
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposal_path' for #<#<Class:0x007fb952cacb38>:0x007fb94d4fe8c8>):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', proposal %></td>
+    20:         <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
+    21:         <td><%= link_to 'Destroy', proposal, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
+    22:       </tr>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb__520747830682147322_70216921397220'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb__520747830682147322_70216921397220'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:10:07 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (163.3ms)
+Completed 500 Internal Server Error in 168ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_proposal_path' for #<#<Class:0x007fb952cacb38>:0x007fb954d8a8c8>
+Did you mean?  new_user_proposal_path):
+    24: 
+    25: <br>
+    26: 
+    27: <%= link_to 'New Proposal', new_proposal_path %>
+  
+app/views/proposals/index.html.erb:27:in `_app_views_proposals_index_html_erb__520747830682147322_70216984582640'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:10:26 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 44ms (Views: 42.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:10:29 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (78.5ms)
+  Rendered proposals/new.html.erb within layouts/application (80.3ms)
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposals_path' for #<#<Class:0x007fb952cacb38>:0x007fb94d5f7f90>
+Did you mean?  user_proposal_path):
+    1: <%= form_with(model: proposal, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216921817040'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216934532320'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:10:48 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:10:50 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:10:52 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (96.1ms)
+  Rendered proposals/new.html.erb within layouts/application (98.0ms)
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposals_path' for #<#<Class:0x007fb952cacb38>:0x007fb952900de0>
+Did you mean?  user_proposal_path):
+    1: <%= form_with(model: proposal, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216919949220'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216965445240'
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:11:33 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (164.8ms)
+  Rendered proposals/new.html.erb within layouts/application (166.3ms)
+Completed 500 Internal Server Error in 172ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_proposal' for #<#<Class:0x007fb952cacb38>:0x007fb94ec963f0>
+Did you mean?  user_proposal_url):
+    1: <%= form_with(model: user_proposal, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216926057860'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216933752240'
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:11:45 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (2.1ms)
+  Rendered proposals/new.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"proposals", :user_id=>"1"}, missing required keys: [:id]):
+    1: <%= form_with(model: user_proposal_url, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216984382040'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216926295200'
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:12:38 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (2.0ms)
+  Rendered proposals/new.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"proposals", :user_id=>"1"}, missing required keys: [:id]):
+    1: <%= form_with(model: user_proposal_url, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216983331260'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216926120560'
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:12:41 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (2.0ms)
+  Rendered proposals/new.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"proposals", :user_id=>"1"}, missing required keys: [:id]):
+    1: <%= form_with(model: user_proposal_url, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216982320980'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216982404220'
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:12:49 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (87.2ms)
+  Rendered proposals/new.html.erb within layouts/application (88.8ms)
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposals_path' for #<#<Class:0x007fb952cacb38>:0x007fb94d426db0>
+Did you mean?  user_proposal_path):
+    1: <%= form_with(model: proposal, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216920608640'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216920952920'
+Started GET "/users/1" for 127.0.0.1 at 2017-06-13 10:13:09 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 34ms (Views: 26.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:13:12 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:13:17 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (85.1ms)
+  Rendered proposals/new.html.erb within layouts/application (86.6ms)
+Completed 500 Internal Server Error in 97ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposals_path' for #<#<Class:0x007fb952cacb38>:0x007fb9548e2320>
+Did you mean?  user_proposal_path):
+    1: <%= form_with(model: proposal, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216982044560'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216982156040'
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:13:31 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (166.1ms)
+  Rendered proposals/new.html.erb within layouts/application (167.8ms)
+Completed 500 Internal Server Error in 173ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_proposal' for #<#<Class:0x007fb952cacb38>:0x007fb954deb7e0>
+Did you mean?  user_proposal_url):
+    1: <%= form_with(model: user_proposal, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216984744460'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216984789320'
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:13:53 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (159.8ms)
+  Rendered proposals/new.html.erb within layouts/application (161.3ms)
+Completed 500 Internal Server Error in 166ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_user_proposal' for #<#<Class:0x007fb952cacb38>:0x007fb94d5340b8>
+Did you mean?  new_user_proposal_url
+               new_user_proposal_path):
+    1: <%= form_with(model: new_user_proposal, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216983380380'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216921490760'
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:14:02 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (87.1ms)
+  Rendered proposals/new.html.erb within layouts/application (88.6ms)
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `/users/1/proposals/new_path' for #<#<Class:0x007fb952cacb38>:0x007fb94d5a2068>):
+    1: <%= form_with(model: new_user_proposal_path, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216984332340'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216921727480'
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:14:19 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (161.8ms)
+  Rendered proposals/new.html.erb within layouts/application (163.4ms)
+Completed 500 Internal Server Error in 168ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_user_proposal' for #<#<Class:0x007fb952cacb38>:0x007fb94ead4300>
+Did you mean?  new_user_proposal_url
+               new_user_proposal_path):
+    1: <%= form_with(model: new_user_proposal, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216925107080'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216932834240'
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:14:30 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (101.1ms)
+  Rendered proposals/new.html.erb within layouts/application (102.7ms)
+Completed 500 Internal Server Error in 107ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `http://localhost:3000/users/1/proposals/new_path' for #<#<Class:0x007fb952cacb38>:0x007fb954912728>):
+    1: <%= form_with(model: new_user_proposal_url, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216982086960'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216982241120'
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:14:37 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (86.5ms)
+  Rendered proposals/new.html.erb within layouts/application (88.2ms)
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `/users/1/proposals/new_path' for #<#<Class:0x007fb952cacb38>:0x007fb954d936a8>):
+    1: <%= form_with(model: new_user_proposal_path, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216984560540'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216984609620'
+Started GET "/" for 127.0.0.1 at 2017-06-13 10:18:34 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-06-13 10:18:38 -0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 38ms (Views: 35.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "//1" for 127.0.0.1 at 2017-06-13 10:18:41 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/1"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/1" for 127.0.0.1 at 2017-06-13 10:18:44 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/1"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/1" for 127.0.0.1 at 2017-06-13 10:18:50 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:18:58 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (91.0ms)
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposals_path' for #<#<Class:0x007fb952cacb38>:0x007fb952a8cec0>
+Did you mean?  user_proposal_path):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', proposals_path(proposal) %></td>
+    20:         <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
+    21:         <td><%= link_to 'Destroy', proposal, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
+    22:       </tr>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb__520747830682147322_70216966252260'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb__520747830682147322_70216966252260'
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:20:39 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (88.4ms)
+  Rendered proposals/new.html.erb within layouts/application (90.2ms)
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `/users/1/proposals/new_path' for #<#<Class:0x007fb952cacb38>:0x007fb94ecc4cf0>):
+    1: <%= form_with(model: new_user_proposal_path, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216933747440'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216933847660'
+Started GET "/users/1/proposals/1" for 127.0.0.1 at 2017-06-13 10:20:48 -0700
+Processing by ProposalsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mProposal Load (0.1ms)[0m  [1m[34mSELECT  "proposals".* FROM "proposals" WHERE "proposals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering proposals/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/show.html.erb within layouts/application (84.3ms)
+Completed 500 Internal Server Error in 90ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `edit_proposal_path' for #<#<Class:0x007fb952cacb38>:0x007fb94d5d0648>
+Did you mean?  edit_user_proposal_path
+               user_proposal_path
+               user_proposals_path):
+    10:   <%= @proposal.user %>
+    11: </p>
+    12: 
+    13: <%= link_to 'Edit', edit_proposal_path(@proposal) %> |
+    14: <%= link_to 'Back', proposals_path %>
+  
+app/views/proposals/show.html.erb:13:in `_app_views_proposals_show_html_erb___513389180904613907_70216921811080'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:21:52 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (80.4ms)
+Completed 500 Internal Server Error in 85ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposal_path' for #<#<Class:0x007fb952cacb38>:0x007fb954ab8eb0>):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', proposal_path(proposal) %></td>
+    20:         
+    21:       </tr>
+    22:     <% end %>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb__520747830682147322_70216983104600'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb__520747830682147322_70216983104600'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:22:06 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (103.0ms)
+Completed 500 Internal Server Error in 109ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposals_path' for #<#<Class:0x007fb952cacb38>:0x007fb954db84f8>
+Did you mean?  user_proposal_path):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', proposals_path(proposal) %></td>
+    20:         
+    21:       </tr>
+    22:     <% end %>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb__520747830682147322_70216984677360'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb__520747830682147322_70216984677360'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:23:53 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (136.1ms)
+Completed 500 Internal Server Error in 141ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x007fb952cacb38>:0x007fb95607c5f8>):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', user_proposal_path(user, proposal) %></td>
+    20:         
+    21:       </tr>
+    22:     <% end %>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb__520747830682147322_70216994514920'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb__520747830682147322_70216994514920'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:24:25 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"proposals", :id=>"1", :user_id=>nil}, missing required keys: [:user_id]):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', user_proposal_path(@user, proposal) %></td>
+    20:         
+    21:       </tr>
+    22:     <% end %>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb__520747830682147322_70216920224360'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb__520747830682147322_70216920224360'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:24:47 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"proposals", :user_id=>#<Proposal id: 1, item: "golf club", monthly: 38.9, months: 6.0, user_id: 1, created_at: "2017-06-13 16:43:55", updated_at: "2017-06-13 16:43:55">}, missing required keys: [:id]):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', user_proposal_path(proposal) %></td>
+    20:         
+    21:       </tr>
+    22:     <% end %>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb__520747830682147322_70216996015480'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb__520747830682147322_70216996015480'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:26:12 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (161.3ms)
+Completed 500 Internal Server Error in 166ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_proposal_path' for #<#<Class:0x007fb952cacb38>:0x007fb952f6bdd8>
+Did you mean?  new_user_proposal_path):
+    25: 
+    26: <br>
+    27: 
+    28: <%= link_to 'New Proposal', new_proposal_path %>
+  
+app/views/proposals/index.html.erb:28:in `_app_views_proposals_index_html_erb__520747830682147322_70216968800840'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:26:35 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (173.2ms)
+Completed 500 Internal Server Error in 178ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_proposal_' for #<#<Class:0x007fb952cacb38>:0x007fb9572d1aa0>
+Did you mean?  new_user_proposal_url):
+    25: 
+    26: <br>
+    27: 
+    28: <%= link_to 'New Proposal', new_proposal_ %>
+  
+app/views/proposals/index.html.erb:28:in `_app_views_proposals_index_html_erb__520747830682147322_70217004126780'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:27:01 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:27:03 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (113.4ms)
+  Rendered proposals/new.html.erb within layouts/application (115.3ms)
+Completed 500 Internal Server Error in 126ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `/users/1/proposals/new_path' for #<#<Class:0x007fb952cacb38>:0x007fb94db682e0>):
+    1: <%= form_with(model: new_user_proposal_path, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216924945480'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216924744540'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:27:31 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.1ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 44ms (Views: 39.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/1/proposals/1" for 127.0.0.1 at 2017-06-13 10:27:33 -0700
+Processing by ProposalsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT  "proposals".* FROM "proposals" WHERE "proposals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering proposals/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/show.html.erb within layouts/application (105.4ms)
+Completed 500 Internal Server Error in 117ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `edit_proposal_path' for #<#<Class:0x007fb956be0c00>:0x007fb956944320>
+Did you mean?  edit_user_proposal_path
+               user_proposal_path
+               user_proposals_path):
+    10:   <%= @proposal.user %>
+    11: </p>
+    12: 
+    13: <%= link_to 'Edit', edit_proposal_path(@proposal) %> |
+    14: <%= link_to 'Back', proposals_path %>
+  
+app/views/proposals/show.html.erb:13:in `_app_views_proposals_show_html_erb___513389180904613907_70216999118460'
+Started GET "/cable" for 127.0.0.1 at 2017-06-13 10:27:41 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-06-13 10:27:41 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "RoomChannel"
