@@ -12,11 +12,14 @@
 
 ActiveRecord::Schema.define(version: 20170613162406) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "buckets", force: :cascade do |t|
     t.string "item"
     t.float "monthly"
     t.float "months"
-    t.integer "user_id"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_buckets_on_user_id"
@@ -26,7 +29,7 @@ ActiveRecord::Schema.define(version: 20170613162406) do
     t.string "item"
     t.float "monthly"
     t.float "months"
-    t.integer "user_id"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_proposals_on_user_id"
@@ -43,4 +46,6 @@ ActiveRecord::Schema.define(version: 20170613162406) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "buckets", "users"
+  add_foreign_key "proposals", "users"
 end
