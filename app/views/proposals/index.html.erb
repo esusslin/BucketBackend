@@ -16,9 +16,8 @@
       <tr>
         <td><%= proposal.item %></td>
         <td><%= proposal.user %></td>
-        <td><%= link_to 'Show', proposal %></td>
-        <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
-        <td><%= link_to 'Destroy', proposal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', user_proposal_path(proposal.user_id, proposal) %></td>
+        
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +25,4 @@
 
 <br>
 
-<%= link_to 'New Proposal', new_proposal_path %>
+<%= link_to 'New Proposal', new_user_proposal_path %>

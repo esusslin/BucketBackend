@@ -62,3 +62,2918 @@ FOREIGN KEY ("user_id")
   [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
   [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT  "proposals".* FROM "proposals" WHERE "proposals"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+Started GET "/" for 127.0.0.1 at 2017-06-13 09:53:12 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (4.6ms)
+Completed 200 OK in 24ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-06-13 09:53:16 -0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 632ms (Views: 624.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 09:53:22 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (140.8ms)
+Completed 500 Internal Server Error in 151ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposal_path' for #<#<Class:0x007f82989de618>:0x007f82989cdea8>):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', proposal %></td>
+    20:         <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
+    21:         <td><%= link_to 'Destroy', proposal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    22:       </tr>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb___4431249663022180022_70099441483140'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb___4431249663022180022_70099441483140'
+Started GET "/cable" for 127.0.0.1 at 2017-06-13 09:53:33 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-06-13 09:53:33 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "RoomChannel"
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 09:56:49 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (169.9ms)
+Completed 500 Internal Server Error in 175ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_proposal' for #<#<Class:0x007f82989de618>:0x007f82999ff790>
+Did you mean?  user_proposal_url):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show',  user_proposal %></td>
+    20:         <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
+    21:         <td><%= link_to 'Destroy', proposal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    22:       </tr>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb___4431249663022180022_70099449643220'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb___4431249663022180022_70099449643220'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 09:57:17 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"proposals", :user_id=>"1"}, missing required keys: [:id]):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show',  user_proposal_url %></td>
+    20:         <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
+    21:         <td><%= link_to 'Destroy', proposal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    22:       </tr>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb___4431249663022180022_70099449616200'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb___4431249663022180022_70099449616200'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 09:57:37 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (92.3ms)
+Completed 500 Internal Server Error in 97ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposal_path' for #<#<Class:0x007f82989de618>:0x007f8299a86218>):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', proposal %></td>
+    20:         <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
+    21:         <td><%= link_to 'Destroy', proposal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    22:       </tr>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb___4431249663022180022_70099450213880'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb___4431249663022180022_70099450213880'
+Started GET "/users/1" for 127.0.0.1 at 2017-06-13 09:58:04 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2017-06-13 09:58:10 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (11.6ms) [cache miss]
+  Rendered users/edit.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2017-06-13 09:58:12 -0700
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R7SZpY0vxUQZ2yWJR2gvTlN+132mqdHIxQuA738zc1V6VCoIIKGrCBfuJIQom973jV4x68sPiFsxKpBcAl/+bA==", "commit"=>"Update User", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-06-13 09:58:12 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-06-13 09:58:14 -0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-06-13 09:58:17 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 09:58:24 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (88.3ms)
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposal_path' for #<#<Class:0x007f82989de618>:0x007f8298ee5fd0>):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', proposal %></td>
+    20:         <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
+    21:         <td><%= link_to 'Destroy', proposal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    22:       </tr>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb___4431249663022180022_70099444118760'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb___4431249663022180022_70099444118760'
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-13 09:59:58 -0700
+Processing by BucketsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering buckets/index.html.erb within layouts/application
+  [1m[36mBucket Load (0.2ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+  Rendered buckets/index.html.erb within layouts/application (164.9ms)
+Completed 500 Internal Server Error in 174ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_bucket_path' for #<#<Class:0x007f8298d67168>:0x007f8298d65390>
+Did you mean?  new_user_path
+               user_bucket_path):
+    26: 
+    27: <br>
+    28: 
+    29: <%= link_to 'New Bucket', new_bucket_path %>
+  
+app/views/buckets/index.html.erb:29:in `_app_views_buckets_index_html_erb___3750623994682526051_70099443334460'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:00:31 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (97.6ms)
+Completed 500 Internal Server Error in 103ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposal_path' for #<#<Class:0x007f82989de618>:0x007f82927de530>):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:        <!--  <td><%= link_to 'Show', proposal %></td>
+    20:         <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
+    21:         <td><%= link_to 'Destroy', proposal, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+    22:       </tr>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb___4431249663022180022_70099390111840'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb___4431249663022180022_70099390111840'
+Started GET "/users/1" for 127.0.0.1 at 2017-06-13 10:01:34 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 188ms (Views: 160.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-06-13 10:01:36 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-06-13 10:01:36 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "RoomChannel"
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:01:49 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.1ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (118.4ms)
+Completed 500 Internal Server Error in 129ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposal_path' for #<#<Class:0x007fb952cacb38>:0x007fb954d3a698>):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', proposal %></td>
+    20:         <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
+    21:         <td><%= link_to 'Destroy', proposal, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
+    22:       </tr>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb__520747830682147322_70216967353200'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb__520747830682147322_70216967353200'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:05:02 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (187.5ms)
+Completed 500 Internal Server Error in 193ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_proposal' for #<#<Class:0x007fb952cacb38>:0x007fb954a93c50>
+Did you mean?  user_proposal_url):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', user_proposal %></td>
+    20:         <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
+    21:         <td><%= link_to 'Destroy', proposal, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
+    22:       </tr>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb__520747830682147322_70216983053880'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb__520747830682147322_70216983053880'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:05:14 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"proposals", :user_id=>"1"}, missing required keys: [:id]):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', user_proposal_path %></td>
+    20:         <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
+    21:         <td><%= link_to 'Destroy', proposal, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
+    22:       </tr>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb__520747830682147322_70216921277580'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb__520747830682147322_70216921277580'
+Started POST "/__web_console/repl_sessions/23fce8f66e46b5158416ca1a3cb814e4/trace" for 127.0.0.1 at 2017-06-13 10:05:15 -0700
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:05:35 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (85.5ms)
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposal_path' for #<#<Class:0x007fb952cacb38>:0x007fb94d4fe8c8>):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', proposal %></td>
+    20:         <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
+    21:         <td><%= link_to 'Destroy', proposal, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
+    22:       </tr>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb__520747830682147322_70216921397220'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb__520747830682147322_70216921397220'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:10:07 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (163.3ms)
+Completed 500 Internal Server Error in 168ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_proposal_path' for #<#<Class:0x007fb952cacb38>:0x007fb954d8a8c8>
+Did you mean?  new_user_proposal_path):
+    24: 
+    25: <br>
+    26: 
+    27: <%= link_to 'New Proposal', new_proposal_path %>
+  
+app/views/proposals/index.html.erb:27:in `_app_views_proposals_index_html_erb__520747830682147322_70216984582640'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:10:26 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 44ms (Views: 42.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:10:29 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (78.5ms)
+  Rendered proposals/new.html.erb within layouts/application (80.3ms)
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposals_path' for #<#<Class:0x007fb952cacb38>:0x007fb94d5f7f90>
+Did you mean?  user_proposal_path):
+    1: <%= form_with(model: proposal, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216921817040'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216934532320'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:10:48 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:10:50 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:10:52 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (96.1ms)
+  Rendered proposals/new.html.erb within layouts/application (98.0ms)
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposals_path' for #<#<Class:0x007fb952cacb38>:0x007fb952900de0>
+Did you mean?  user_proposal_path):
+    1: <%= form_with(model: proposal, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216919949220'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216965445240'
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:11:33 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (164.8ms)
+  Rendered proposals/new.html.erb within layouts/application (166.3ms)
+Completed 500 Internal Server Error in 172ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_proposal' for #<#<Class:0x007fb952cacb38>:0x007fb94ec963f0>
+Did you mean?  user_proposal_url):
+    1: <%= form_with(model: user_proposal, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216926057860'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216933752240'
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:11:45 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (2.1ms)
+  Rendered proposals/new.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"proposals", :user_id=>"1"}, missing required keys: [:id]):
+    1: <%= form_with(model: user_proposal_url, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216984382040'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216926295200'
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:12:38 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (2.0ms)
+  Rendered proposals/new.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"proposals", :user_id=>"1"}, missing required keys: [:id]):
+    1: <%= form_with(model: user_proposal_url, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216983331260'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216926120560'
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:12:41 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (2.0ms)
+  Rendered proposals/new.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"proposals", :user_id=>"1"}, missing required keys: [:id]):
+    1: <%= form_with(model: user_proposal_url, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216982320980'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216982404220'
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:12:49 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (87.2ms)
+  Rendered proposals/new.html.erb within layouts/application (88.8ms)
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposals_path' for #<#<Class:0x007fb952cacb38>:0x007fb94d426db0>
+Did you mean?  user_proposal_path):
+    1: <%= form_with(model: proposal, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216920608640'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216920952920'
+Started GET "/users/1" for 127.0.0.1 at 2017-06-13 10:13:09 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 34ms (Views: 26.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:13:12 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:13:17 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (85.1ms)
+  Rendered proposals/new.html.erb within layouts/application (86.6ms)
+Completed 500 Internal Server Error in 97ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposals_path' for #<#<Class:0x007fb952cacb38>:0x007fb9548e2320>
+Did you mean?  user_proposal_path):
+    1: <%= form_with(model: proposal, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216982044560'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216982156040'
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:13:31 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (166.1ms)
+  Rendered proposals/new.html.erb within layouts/application (167.8ms)
+Completed 500 Internal Server Error in 173ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_proposal' for #<#<Class:0x007fb952cacb38>:0x007fb954deb7e0>
+Did you mean?  user_proposal_url):
+    1: <%= form_with(model: user_proposal, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216984744460'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216984789320'
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:13:53 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (159.8ms)
+  Rendered proposals/new.html.erb within layouts/application (161.3ms)
+Completed 500 Internal Server Error in 166ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_user_proposal' for #<#<Class:0x007fb952cacb38>:0x007fb94d5340b8>
+Did you mean?  new_user_proposal_url
+               new_user_proposal_path):
+    1: <%= form_with(model: new_user_proposal, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216983380380'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216921490760'
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:14:02 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (87.1ms)
+  Rendered proposals/new.html.erb within layouts/application (88.6ms)
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `/users/1/proposals/new_path' for #<#<Class:0x007fb952cacb38>:0x007fb94d5a2068>):
+    1: <%= form_with(model: new_user_proposal_path, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216984332340'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216921727480'
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:14:19 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (161.8ms)
+  Rendered proposals/new.html.erb within layouts/application (163.4ms)
+Completed 500 Internal Server Error in 168ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_user_proposal' for #<#<Class:0x007fb952cacb38>:0x007fb94ead4300>
+Did you mean?  new_user_proposal_url
+               new_user_proposal_path):
+    1: <%= form_with(model: new_user_proposal, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216925107080'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216932834240'
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:14:30 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (101.1ms)
+  Rendered proposals/new.html.erb within layouts/application (102.7ms)
+Completed 500 Internal Server Error in 107ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `http://localhost:3000/users/1/proposals/new_path' for #<#<Class:0x007fb952cacb38>:0x007fb954912728>):
+    1: <%= form_with(model: new_user_proposal_url, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216982086960'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216982241120'
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:14:37 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (86.5ms)
+  Rendered proposals/new.html.erb within layouts/application (88.2ms)
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `/users/1/proposals/new_path' for #<#<Class:0x007fb952cacb38>:0x007fb954d936a8>):
+    1: <%= form_with(model: new_user_proposal_path, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216984560540'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216984609620'
+Started GET "/" for 127.0.0.1 at 2017-06-13 10:18:34 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-06-13 10:18:38 -0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 38ms (Views: 35.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "//1" for 127.0.0.1 at 2017-06-13 10:18:41 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/1"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/1" for 127.0.0.1 at 2017-06-13 10:18:44 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/1"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/1" for 127.0.0.1 at 2017-06-13 10:18:50 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:18:58 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (91.0ms)
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposals_path' for #<#<Class:0x007fb952cacb38>:0x007fb952a8cec0>
+Did you mean?  user_proposal_path):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', proposals_path(proposal) %></td>
+    20:         <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
+    21:         <td><%= link_to 'Destroy', proposal, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
+    22:       </tr>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb__520747830682147322_70216966252260'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb__520747830682147322_70216966252260'
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:20:39 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (88.4ms)
+  Rendered proposals/new.html.erb within layouts/application (90.2ms)
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `/users/1/proposals/new_path' for #<#<Class:0x007fb952cacb38>:0x007fb94ecc4cf0>):
+    1: <%= form_with(model: new_user_proposal_path, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216933747440'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216933847660'
+Started GET "/users/1/proposals/1" for 127.0.0.1 at 2017-06-13 10:20:48 -0700
+Processing by ProposalsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mProposal Load (0.1ms)[0m  [1m[34mSELECT  "proposals".* FROM "proposals" WHERE "proposals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering proposals/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/show.html.erb within layouts/application (84.3ms)
+Completed 500 Internal Server Error in 90ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `edit_proposal_path' for #<#<Class:0x007fb952cacb38>:0x007fb94d5d0648>
+Did you mean?  edit_user_proposal_path
+               user_proposal_path
+               user_proposals_path):
+    10:   <%= @proposal.user %>
+    11: </p>
+    12: 
+    13: <%= link_to 'Edit', edit_proposal_path(@proposal) %> |
+    14: <%= link_to 'Back', proposals_path %>
+  
+app/views/proposals/show.html.erb:13:in `_app_views_proposals_show_html_erb___513389180904613907_70216921811080'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:21:52 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (80.4ms)
+Completed 500 Internal Server Error in 85ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposal_path' for #<#<Class:0x007fb952cacb38>:0x007fb954ab8eb0>):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', proposal_path(proposal) %></td>
+    20:         
+    21:       </tr>
+    22:     <% end %>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb__520747830682147322_70216983104600'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb__520747830682147322_70216983104600'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:22:06 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (103.0ms)
+Completed 500 Internal Server Error in 109ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `proposals_path' for #<#<Class:0x007fb952cacb38>:0x007fb954db84f8>
+Did you mean?  user_proposal_path):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', proposals_path(proposal) %></td>
+    20:         
+    21:       </tr>
+    22:     <% end %>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb__520747830682147322_70216984677360'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb__520747830682147322_70216984677360'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:23:53 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (136.1ms)
+Completed 500 Internal Server Error in 141ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x007fb952cacb38>:0x007fb95607c5f8>):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', user_proposal_path(user, proposal) %></td>
+    20:         
+    21:       </tr>
+    22:     <% end %>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb__520747830682147322_70216994514920'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb__520747830682147322_70216994514920'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:24:25 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"proposals", :id=>"1", :user_id=>nil}, missing required keys: [:user_id]):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', user_proposal_path(@user, proposal) %></td>
+    20:         
+    21:       </tr>
+    22:     <% end %>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb__520747830682147322_70216920224360'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb__520747830682147322_70216920224360'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:24:47 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"proposals", :user_id=>#<Proposal id: 1, item: "golf club", monthly: 38.9, months: 6.0, user_id: 1, created_at: "2017-06-13 16:43:55", updated_at: "2017-06-13 16:43:55">}, missing required keys: [:id]):
+    16:       <tr>
+    17:         <td><%= proposal.item %></td>
+    18:         <td><%= proposal.user %></td>
+    19:         <td><%= link_to 'Show', user_proposal_path(proposal) %></td>
+    20:         
+    21:       </tr>
+    22:     <% end %>
+  
+app/views/proposals/index.html.erb:19:in `block in _app_views_proposals_index_html_erb__520747830682147322_70216996015480'
+app/views/proposals/index.html.erb:15:in `_app_views_proposals_index_html_erb__520747830682147322_70216996015480'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:26:12 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (161.3ms)
+Completed 500 Internal Server Error in 166ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_proposal_path' for #<#<Class:0x007fb952cacb38>:0x007fb952f6bdd8>
+Did you mean?  new_user_proposal_path):
+    25: 
+    26: <br>
+    27: 
+    28: <%= link_to 'New Proposal', new_proposal_path %>
+  
+app/views/proposals/index.html.erb:28:in `_app_views_proposals_index_html_erb__520747830682147322_70216968800840'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:26:35 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (173.2ms)
+Completed 500 Internal Server Error in 178ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_proposal_' for #<#<Class:0x007fb952cacb38>:0x007fb9572d1aa0>
+Did you mean?  new_user_proposal_url):
+    25: 
+    26: <br>
+    27: 
+    28: <%= link_to 'New Proposal', new_proposal_ %>
+  
+app/views/proposals/index.html.erb:28:in `_app_views_proposals_index_html_erb__520747830682147322_70217004126780'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:27:01 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals/new" for 127.0.0.1 at 2017-06-13 10:27:03 -0700
+Processing by ProposalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/new.html.erb within layouts/application
+  Rendered proposals/_form.html.erb (113.4ms)
+  Rendered proposals/new.html.erb within layouts/application (115.3ms)
+Completed 500 Internal Server Error in 126ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `/users/1/proposals/new_path' for #<#<Class:0x007fb952cacb38>:0x007fb94db682e0>):
+    1: <%= form_with(model: new_user_proposal_path, local: true) do |form| %>
+    2:   <% if proposal.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(proposal.errors.count, "error") %> prohibited this proposal from being saved:</h2>
+  
+app/views/proposals/_form.html.erb:1:in `_app_views_proposals__form_html_erb___2119967909656282474_70216924945480'
+app/views/proposals/new.html.erb:3:in `_app_views_proposals_new_html_erb___3079827769809940377_70216924744540'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-13 10:27:31 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering proposals/index.html.erb within layouts/application
+  [1m[36mProposal Load (0.1ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 44ms (Views: 39.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/1/proposals/1" for 127.0.0.1 at 2017-06-13 10:27:33 -0700
+Processing by ProposalsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT  "proposals".* FROM "proposals" WHERE "proposals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering proposals/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered proposals/show.html.erb within layouts/application (105.4ms)
+Completed 500 Internal Server Error in 117ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `edit_proposal_path' for #<#<Class:0x007fb956be0c00>:0x007fb956944320>
+Did you mean?  edit_user_proposal_path
+               user_proposal_path
+               user_proposals_path):
+    10:   <%= @proposal.user %>
+    11: </p>
+    12: 
+    13: <%= link_to 'Edit', edit_proposal_path(@proposal) %> |
+    14: <%= link_to 'Back', proposals_path %>
+  
+app/views/proposals/show.html.erb:13:in `_app_views_proposals_show_html_erb___513389180904613907_70216999118460'
+Started GET "/cable" for 127.0.0.1 at 2017-06-13 10:27:41 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-06-13 10:27:41 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "RoomChannel"
+Started GET "/" for 127.0.0.1 at 2017-06-13 11:10:04 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (3.5ms)
+Completed 200 OK in 9ms (Views: 5.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-06-13 11:10:08 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 47ms (Views: 31.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-06-13 11:10:11 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-06-13 11:10:11 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "RoomChannel"
+Started POST "/users" for 127.0.0.1 at 2017-06-13 11:16:22 -0700
+Processing by UsersController#create as */*
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.1) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.1) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.1) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.1) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.1) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.1) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.1) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.1) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.1) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.1) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.1) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.1) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.1) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.1) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/cable" for 127.0.0.1 at 2017-06-13 11:16:29 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-06-13 11:16:29 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "RoomChannel"
+Started GET "/cable" for 127.0.0.1 at 2017-06-13 11:18:10 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-06-13 11:18:10 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "RoomChannel"
+Started POST "/users" for 127.0.0.1 at 2017-06-13 11:18:13 -0700
+Processing by UsersController#create as */*
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.1) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.1) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.1) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.1) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.1) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.1) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.1) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.1) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.1) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.1) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.1) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.1) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.1) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.1) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users" for 127.0.0.1 at 2017-06-13 11:18:58 -0700
+Started GET "/cable" for 127.0.0.1 at 2017-06-13 11:19:08 -0700
+Processing by UsersController#create as */*
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.1) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.1) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.1) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.1) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.1) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.1) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.1) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.1) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.1) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.1) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.1) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.1) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.1) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.1) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-06-13 11:19:09 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "RoomChannel"
+Started POST "/users" for 127.0.0.1 at 2017-06-13 11:21:18 -0700
+  
+ActionController::RoutingError (undefined method `before_filter' for ApplicationController:Class
+Did you mean?  before_action):
+  
+app/controllers/application_controller.rb:5:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:1:in `<top (required)>'
+Started GET "/cable" for 127.0.0.1 at 2017-06-13 11:21:24 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-06-13 11:21:24 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "RoomChannel"
+Started POST "/users" for 127.0.0.1 at 2017-06-13 11:22:29 -0700
+Processing by UsersController#create as */*
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.1) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.1) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.1) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.1) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.1) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.1) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.1) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.1) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.1) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.1) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.1) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.1) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.1) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.1) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/cable" for 127.0.0.1 at 2017-06-13 11:22:39 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-06-13 11:22:39 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "RoomChannel"
+Started POST "/users" for 127.0.0.1 at 2017-06-13 11:23:45 -0700
+  
+ActionController::RoutingError (undefined method `before_filter' for ApplicationController:Class
+Did you mean?  before_action):
+  
+app/controllers/application_controller.rb:5:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:1:in `<top (required)>'
+Started GET "/cable" for 127.0.0.1 at 2017-06-13 11:23:53 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-06-13 11:23:53 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "RoomChannel"
+Started POST "/users" for 127.0.0.1 at 2017-06-13 11:24:47 -0700
+Processing by UsersController#create as */*
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.1) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.1) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.1) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.1) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.1) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.1) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.1) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.1) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.1) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.1) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.1) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.1) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.1) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.1) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/cable" for 127.0.0.1 at 2017-06-13 11:24:55 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-06-13 11:24:55 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "RoomChannel"
+Started POST "/users" for 127.0.0.1 at 2017-06-13 11:29:00 -0700
+  
+ActionController::RoutingError (undefined local variable or method `tr' for ApplicationController:Class
+Did you mean?  try):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:1:in `<top (required)>'
+Started GET "/cable" for 127.0.0.1 at 2017-06-13 11:29:06 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-06-13 11:29:06 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "RoomChannel"
+Started POST "/users" for 127.0.0.1 at 2017-06-13 11:29:55 -0700
+Processing by UsersController#create as */*
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 22ms
+
+
+  
+NoMethodError (undefined method `skip_before_filter' for User (call 'User.connection' to establish a connection):Class):
+  
+app/models/user.rb:2:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:29:in `create'
+Started GET "/cable" for 127.0.0.1 at 2017-06-13 11:30:02 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-06-13 11:30:02 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "RoomChannel"
+Started POST "/users" for 127.0.0.1 at 2017-06-13 11:32:29 -0700
+Processing by UsersController#create as */*
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-06-13 18:32:29.890420"], ["updated_at", "2017-06-13 18:32:29.890420"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 18ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2017-06-13 11:32:29 -0700
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 242ms (Views: 226.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-06-13 11:32:37 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-06-13 11:32:37 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "RoomChannel"
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20170613161557)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "email" varchar, "checking_acct" float, "savings_acct" float, "monthly" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170613161557"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProposals (20170613162011)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "proposals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "item" varchar, "monthly" float, "months" float, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_0224a90884"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_proposals_on_user_id" ON "proposals" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170613162011"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateBuckets (20170613162406)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "buckets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "item" varchar, "monthly" float, "months" float, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_1d8aa9e992"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_buckets_on_user_id" ON "buckets" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170613162406"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-06-13 18:37:08.648890"], ["updated_at", "2017-06-13 18:37:08.648890"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_buckets_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_buckets_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_proposals_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_proposals_on_user_id' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2017-06-13 11:39:16 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 19ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-06-13 11:39:18 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-06-13 11:39:18 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "RoomChannel"
+Started GET "/users" for 127.0.0.1 at 2017-06-13 11:39:19 -0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 140ms (Views: 133.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-13 11:39:32 -0700
+Processing by UsersController#create as */*
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:74:in `user_params'
+app/controllers/users_controller.rb:29:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-06-13 11:40:29 -0700
+Processing by UsersController#create as */*
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 3ms
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: first_name):
+  
+app/controllers/users_controller.rb:74:in `user_params'
+app/controllers/users_controller.rb:29:in `create'
+Started GET "/cable" for 127.0.0.1 at 2017-06-13 11:40:37 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-06-13 11:40:37 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "RoomChannel"
+Started POST "/users" for 127.0.0.1 at 2017-06-13 11:43:02 -0700
+Processing by UsersController#create as */*
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 5ms
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:74:in `user_params'
+app/controllers/users_controller.rb:29:in `create'
+Started GET "/cable" for 127.0.0.1 at 2017-06-13 11:43:10 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-06-13 11:43:10 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "RoomChannel"
+Started POST "/users" for 127.0.0.1 at 2017-06-13 11:46:35 -0700
+Processing by UsersController#create as */*
+  Parameters: {"first_name"=>"emmet", "user"=>{"first_name"=>"emmet"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "emmet"], ["created_at", "2017-06-13 18:46:35.657422"], ["updated_at", "2017-06-13 18:46:35.657422"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 12ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-06-13 11:46:35 -0700
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 47ms (Views: 33.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-06-13 11:46:44 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-06-13 11:46:44 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "RoomChannel"
+Started POST "/users" for 127.0.0.1 at 2017-06-13 11:48:51 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"item"=>"e"}}
+Can't verify CSRF token authenticity.
+Unpermitted parameter: :item
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-06-13 18:48:51.708989"], ["updated_at", "2017-06-13 18:48:51.708989"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2017-06-13 11:48:51 -0700
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 44ms (Views: 31.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-13 11:49:57 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Emmet"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Emmet"], ["created_at", "2017-06-13 18:49:57.657079"], ["updated_at", "2017-06-13 18:49:57.657079"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 3ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2017-06-13 11:49:57 -0700
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 32ms (Views: 22.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-13 11:51:51 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Emmet"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Emmet"], ["created_at", "2017-06-13 18:51:51.372935"], ["updated_at", "2017-06-13 18:51:51.372935"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::MissingTemplate (Missing template users/create, application/create with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/emmet/Desktop/BucketBackend/app/views"
+):
+  
+app/controllers/users_controller.rb:34:in `block in create'
+app/controllers/users_controller.rb:31:in `create'
+Started GET "/cable" for 127.0.0.1 at 2017-06-13 11:51:59 -0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-06-13 11:51:59 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "RoomChannel"
+Started GET "/cable" for 127.0.0.1 at 2017-06-13 11:58:18 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-06-13 11:58:18 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "RoomChannel"
+Started POST "/users" for 127.0.0.1 at 2017-06-13 11:58:34 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"emmet"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "emmet"], ["created_at", "2017-06-13 18:58:34.126095"], ["updated_at", "2017-06-13 18:58:34.126095"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template users/create, application/create with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/emmet/Desktop/BucketBackend/app/views"
+):
+  
+app/controllers/users_controller.rb:34:in `block in create'
+app/controllers/users_controller.rb:31:in `create'
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-06-13 11:59:58 -0700
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:02:00 -0700
+  
+ActionController::RoutingError (undefined method `rotect_from_forgery' for ApplicationController:Class
+Did you mean?  protect_from_forgery):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:1:in `<top (required)>'
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:04:06 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"emmet"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "emmet"], ["created_at", "2017-06-13 19:04:06.172750"], ["updated_at", "2017-06-13 19:04:06.172750"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::MissingTemplate (Missing template users/create, application/create with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/emmet/Desktop/BucketBackend/app/views"
+):
+  
+app/controllers/users_controller.rb:34:in `block in create'
+app/controllers/users_controller.rb:31:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:12:46 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"emet"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "emet"], ["created_at", "2017-06-13 19:12:46.636341"], ["updated_at", "2017-06-13 19:12:46.636341"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::MissingTemplate (Missing template users/create, application/create with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/emmet/Desktop/BucketBackend/app/views"
+):
+  
+app/controllers/users_controller.rb:34:in `block in create'
+app/controllers/users_controller.rb:31:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:12:49 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Emmet"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Emmet"], ["created_at", "2017-06-13 19:12:49.352322"], ["updated_at", "2017-06-13 19:12:49.352322"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::MissingTemplate (Missing template users/create, application/create with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/emmet/Desktop/BucketBackend/app/views"
+):
+  
+app/controllers/users_controller.rb:34:in `block in create'
+app/controllers/users_controller.rb:31:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:12:50 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Emmet"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Emmet"], ["created_at", "2017-06-13 19:12:50.679431"], ["updated_at", "2017-06-13 19:12:50.679431"]]
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 6.7ms)
+
+
+  
+ActionView::MissingTemplate (Missing template users/create, application/create with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/emmet/Desktop/BucketBackend/app/views"
+):
+  
+app/controllers/users_controller.rb:34:in `block in create'
+app/controllers/users_controller.rb:31:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:17:19 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Emmet"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Emmet"], ["created_at", "2017-06-13 19:17:19.601909"], ["updated_at", "2017-06-13 19:17:19.601909"]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 4.3ms)
+
+
+  
+ActionView::MissingTemplate (Missing template users/create, application/create with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/emmet/Desktop/BucketBackend/app/views"
+):
+  
+app/controllers/users_controller.rb:34:in `block in create'
+app/controllers/users_controller.rb:31:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:17:22 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Emmet"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Emmet"], ["created_at", "2017-06-13 19:17:22.011373"], ["updated_at", "2017-06-13 19:17:22.011373"]]
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 6.3ms)
+
+
+  
+ActionView::MissingTemplate (Missing template users/create, application/create with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/emmet/Desktop/BucketBackend/app/views"
+):
+  
+app/controllers/users_controller.rb:34:in `block in create'
+app/controllers/users_controller.rb:31:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:18:04 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/users_controller.rb:3:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<top (required)>'
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:18:07 -0700
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/users_controller.rb:3:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<top (required)>'
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:19:54 -0700
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:20:13 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Emmet"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Emmet"], ["created_at", "2017-06-13 19:20:13.717517"], ["updated_at", "2017-06-13 19:20:13.717517"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 3.3ms)
+
+
+  
+ActionView::MissingTemplate (Missing template users/create, application/create with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/emmet/Desktop/BucketBackend/app/views"
+):
+  
+app/controllers/users_controller.rb:34:in `block in create'
+app/controllers/users_controller.rb:31:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:23:25 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Emmet"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Emmet"], ["created_at", "2017-06-13 19:23:25.310438"], ["updated_at", "2017-06-13 19:23:25.310438"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::MissingTemplate (Missing template users/create, application/create with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/emmet/Desktop/BucketBackend/app/views"
+):
+  
+app/controllers/users_controller.rb:34:in `block in create'
+app/controllers/users_controller.rb:31:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:26:36 -0700
+  
+SyntaxError (/Users/emmet/Desktop/BucketBackend/config/routes.rb:12: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+config/routes.rb:12: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:26:54 -0700
+  
+SyntaxError (/Users/emmet/Desktop/BucketBackend/config/routes.rb:12: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+config/routes.rb:12: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:27:04 -0700
+  
+NoMethodError (undefined method `resources' for main:Object):
+  
+config/routes.rb:7:in `<top (required)>'
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:27:09 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/users"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20170613161557)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "email" varchar, "checking_acct" float, "savings_acct" float, "monthly" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170613161557"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProposals (20170613162011)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "proposals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "item" varchar, "monthly" float, "months" float, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_0224a90884"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_proposals_on_user_id" ON "proposals" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170613162011"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateBuckets (20170613162406)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "buckets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "item" varchar, "monthly" float, "months" float, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_1d8aa9e992"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_buckets_on_user_id" ON "buckets" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170613162406"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-06-13 19:33:48.735612"], ["updated_at", "2017-06-13 19:33:48.735612"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_buckets_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_buckets_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_proposals_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_proposals_on_user_id' AND type='index'
+[0m
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:39:17 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Emmet"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Emmet"], ["created_at", "2017-06-13 19:39:18.328001"], ["updated_at", "2017-06-13 19:39:18.328001"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::MissingTemplate (Missing template users/create, application/create with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/emmet/Desktop/BucketBackend/app/views"
+):
+  
+app/controllers/users_controller.rb:34:in `block in create'
+app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:46:14 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Emmet"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Emmet"], ["created_at", "2017-06-13 19:46:24.599389"], ["updated_at", "2017-06-13 19:46:24.599389"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::MissingTemplate (Missing template users/create, application/create with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/emmet/Desktop/BucketBackend/app/views"
+):
+  
+app/controllers/users_controller.rb:34:in `block in create'
+app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:47:36 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Emmet"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Emmet"], ["created_at", "2017-06-13 19:47:36.077943"], ["updated_at", "2017-06-13 19:47:36.077943"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::MissingTemplate (Missing template users/create, application/create with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/emmet/Desktop/BucketBackend/app/views"
+):
+  
+app/controllers/users_controller.rb:34:in `block in create'
+app/controllers/users_controller.rb:31:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:48:05 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"emetttttt"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "emetttttt"], ["created_at", "2017-06-13 19:48:05.571742"], ["updated_at", "2017-06-13 19:48:05.571742"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::MissingTemplate (Missing template users/create, application/create with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/emmet/Desktop/BucketBackend/app/views"
+):
+  
+app/controllers/users_controller.rb:34:in `block in create'
+app/controllers/users_controller.rb:31:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:48:11 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Emmet"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Emmet"], ["created_at", "2017-06-13 19:48:11.061930"], ["updated_at", "2017-06-13 19:48:11.061930"]]
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 6.5ms)
+
+
+  
+ActionView::MissingTemplate (Missing template users/create, application/create with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/emmet/Desktop/BucketBackend/app/views"
+):
+  
+app/controllers/users_controller.rb:34:in `block in create'
+app/controllers/users_controller.rb:31:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:50:32 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Emmet"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "Emmet"], ["created_at", "2017-06-13 19:50:32.485272"], ["updated_at", "2017-06-13 19:50:32.485272"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+Completed 406 Not Acceptable in 15ms (Views: 0.5ms | ActiveRecord: 3.4ms)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:55:45 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"fff"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "fff"], ["created_at", "2017-06-13 19:55:45.203131"], ["updated_at", "2017-06-13 19:55:45.203131"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 406 Not Acceptable in 11ms (Views: 0.3ms | ActiveRecord: 1.7ms)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:57:23 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Emmet"}}
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 61ms
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:58:50 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Emmet"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-06-13 19:58:50.560059"], ["updated_at", "2017-06-13 19:58:50.560059"]]
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 83ms (ActiveRecord: 7.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:59:02 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Emmet"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-06-13 19:59:02.736173"], ["updated_at", "2017-06-13 19:59:02.736173"]]
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 69ms (ActiveRecord: 6.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-13 12:59:03 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Emmet"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-06-13 19:59:03.433311"], ["updated_at", "2017-06-13 19:59:03.433311"]]
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 69ms (ActiveRecord: 6.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-13 13:07:00 -0700
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:6:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started POST "/users" for 127.0.0.1 at 2017-06-13 13:07:06 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/users"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users" for 127.0.0.1 at 2017-06-13 13:07:07 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/users"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users" for 127.0.0.1 at 2017-06-13 13:07:08 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/users"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users" for 127.0.0.1 at 2017-06-13 13:09:45 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Emmet"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-06-13 20:09:46.036500"], ["updated_at", "2017-06-13 20:09:46.036500"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 76ms (ActiveRecord: 2.1ms)
+
+
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/users" for 127.0.0.1 at 2017-06-13 13:17:34 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Frank"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-06-13 20:17:34.962904"], ["updated_at", "2017-06-13 20:17:34.962904"]]
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 78ms (ActiveRecord: 7.2ms)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20170613161557)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "email" varchar, "checking_acct" float, "savings_acct" float, "monthly" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170613161557"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProposals (20170613162011)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "proposals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "item" varchar, "monthly" float, "months" float, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_0224a90884"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_proposals_on_user_id" ON "proposals" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170613162011"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateBuckets (20170613162406)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "buckets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "item" varchar, "monthly" float, "months" float, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_1d8aa9e992"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_buckets_on_user_id" ON "buckets" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170613162406"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-06-13 20:20:08.190551"], ["updated_at", "2017-06-13 20:20:08.190551"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_buckets_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_buckets_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_proposals_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_proposals_on_user_id' AND type='index'
+[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/users/getuser" for 127.0.0.1 at 2017-06-13 13:20:31 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#getuser as HTML
+Completed 406 Not Acceptable in 54ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (UsersController#getuser is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.1) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.1) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.1) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.1) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.1) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.1) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.1) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-13 13:22:24 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (3.2ms)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/getuser" for 127.0.0.1 at 2017-06-13 13:22:31 -0700
+Processing by UsersController#getuser as HTML
+Completed 406 Not Acceptable in 44ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (UsersController#getuser is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.1) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.1) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.1) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.1) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.1) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.1) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.1) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-13 13:23:19 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (3.6ms)
+Completed 200 OK in 16ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/users" for 127.0.0.1 at 2017-06-13 13:25:47 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"jeff"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-06-13 20:25:47.468373"], ["updated_at", "2017-06-13 20:25:47.468373"]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 24ms (Views: 0.3ms | ActiveRecord: 7.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-13 13:33:44 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"jerry"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-06-13 20:33:44.383845"], ["updated_at", "2017-06-13 20:33:44.383845"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-13 13:37:57 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"George"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-06-13 20:37:57.192985"], ["updated_at", "2017-06-13 20:37:57.192985"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-13 13:42:04 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Roger"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-06-13 20:42:04.564192"], ["updated_at", "2017-06-13 20:42:04.564192"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-13 13:48:44 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Larry"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-06-13 20:48:44.813847"], ["updated_at", "2017-06-13 20:48:44.813847"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-13 13:52:58 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"ChefJessions"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-06-13 20:53:08.302674"], ["updated_at", "2017-06-13 20:53:08.302674"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-13 13:54:16 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Fred"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-06-13 20:54:16.308716"], ["updated_at", "2017-06-13 20:54:16.308716"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-13 13:55:54 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Gerald"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-06-13 20:55:54.885309"], ["updated_at", "2017-06-13 20:55:54.885309"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-13 13:57:23 -0700
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Johnson"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-06-13 20:57:23.151440"], ["updated_at", "2017-06-13 20:57:23.151440"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/9" for 127.0.0.1 at 2017-06-13 13:57:25 -0700
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 241ms (Views: 211.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/9" for 127.0.0.1 at 2017-06-13 13:59:02 -0700
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 13ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=):
+  
+app/controllers/users_controller.rb:15:in `show'
+Started GET "/users/9" for 127.0.0.1 at 2017-06-13 14:00:19 -0700
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 16ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=):
+  
+app/controllers/users_controller.rb:15:in `show'
+Started GET "/users/9" for 127.0.0.1 at 2017-06-13 14:01:07 -0700
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 1.1ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20170613161557)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "email" varchar, "checking_acct" float, "savings_acct" float, "monthly" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170613161557"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProposals (20170613162011)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "proposals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "item" varchar, "monthly" float, "months" float, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_0224a90884"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_proposals_on_user_id" ON "proposals" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170613162011"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateBuckets (20170613162406)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "buckets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "item" varchar, "monthly" float, "months" float, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_1d8aa9e992"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_buckets_on_user_id" ON "buckets" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170613162406"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-06-13 21:05:13.669271"], ["updated_at", "2017-06-13 21:05:13.669271"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_buckets_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_buckets_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_proposals_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_proposals_on_user_id' AND type='index'
+[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["first_name", "larry"], ["created_at", "2017-06-13 21:05:53.625683"], ["updated_at", "2017-06-13 21:05:53.625683"]]
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "last_name" = ?, "email" = ?, "checking_acct" = ?, "savings_acct" = ?, "monthly" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_name", "ferrell"], ["email", "lferrell@email.com"], ["checking_acct", 2568.4], ["savings_acct", 16748.9], ["monthly", 3829.5], ["updated_at", "2017-06-13 21:07:30.546713"], ["id", 1]]
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/users" for 127.0.0.1 at 2017-06-13 14:12:06 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"Fred"}}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-06-13 21:12:06.929349"], ["updated_at", "2017-06-13 21:12:06.929349"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 27ms (Views: 0.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-06-13 14:20:49 -0700
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-06-13 14:23:00 -0700
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-06-13 14:23:30 -0700
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-06-13 14:24:00 -0700
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-06-13 14:30:58 -0700
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/url" for 127.0.0.1 at 2017-06-13 15:37:00 -0700
+  
+ArgumentError ('' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:4:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-13 15:39:53 -0700
+  
+ArgumentError ('' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:4:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-13 15:39:55 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/proposals/url"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-13 15:39:57 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/proposals/url"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-13 15:39:58 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/proposals/url"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-13 15:40:20 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Ozark-Trail-28-Piece-Premium-Camping-Combo-Set/51718439?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227047091558&wl0=&wl1=g&wl2=c&wl3=103609197977&wl4=aud-273067695102:pla-310159579847&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=51718439&wl13=&veh=sem", "proposal"=>{}}
+No template found for ProposalsController#url, rendering head :no_content
+Completed 204 No Content in 63ms (ActiveRecord: 0.6ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-13 15:41:52 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Ozark-Trail-28-Piece-Premium-Camping-Combo-Set/51718439?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227047091558&wl0=&wl1=g&wl2=c&wl3=103609197977&wl4=aud-273067695102:pla-310159579847&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=51718439&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+No template found for ProposalsController#url, rendering head :no_content
+Completed 204 No Content in 53ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-13 15:58:47 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Ozark-Trail-28-Piece-Premium-Camping-Combo-Set/51718439?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227047091558&wl0=&wl1=g&wl2=c&wl3=103609197977&wl4=aud-273067695102:pla-310159579847&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=51718439&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.6ms)
+
+
+  
+NameError (uninitialized constant ProposalsController::Semantics3):
+  
+app/controllers/proposals_controller.rb:16:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-13 16:00:28 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Ozark-Trail-28-Piece-Premium-Camping-Combo-Set/51718439?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227047091558&wl0=&wl1=g&wl2=c&wl3=103609197977&wl4=aud-273067695102:pla-310159579847&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=51718439&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant ProposalsController::Semantics3):
+  
+app/controllers/proposals_controller.rb:16:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-13 16:00:44 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Ozark-Trail-28-Piece-Premium-Camping-Combo-Set/51718439?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227047091558&wl0=&wl1=g&wl2=c&wl3=103609197977&wl4=aud-273067695102:pla-310159579847&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=51718439&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+No template found for ProposalsController#url, rendering head :no_content
+Completed 204 No Content in 4644ms (ActiveRecord: 0.3ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-13 16:05:13 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Ozark-Trail-28-Piece-Premium-Camping-Combo-Set/51718439?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227047091558&wl0=&wl1=g&wl2=c&wl3=103609197977&wl4=aud-273067695102:pla-310159579847&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=51718439&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+No template found for ProposalsController#url, rendering head :no_content
+Completed 204 No Content in 1291ms (ActiveRecord: 0.8ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-13 16:05:42 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Ozark-Trail-28-Piece-Premium-Camping-Combo-Set/51718439?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227047091558&wl0=&wl1=g&wl2=c&wl3=103609197977&wl4=aud-273067695102:pla-310159579847&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=51718439&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+No template found for ProposalsController#url, rendering head :no_content
+Completed 204 No Content in 1313ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-13 16:06:00 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Ozark-Trail-28-Piece-Premium-Camping-Combo-Set/51718439?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227047091558&wl0=&wl1=g&wl2=c&wl3=103609197977&wl4=aud-273067695102:pla-310159579847&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=51718439&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+No template found for ProposalsController#url, rendering head :no_content
+Completed 204 No Content in 1432ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-13 16:10:01 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Ozark-Trail-28-Piece-Premium-Camping-Combo-Set/51718439?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227047091558&wl0=&wl1=g&wl2=c&wl3=103609197977&wl4=aud-273067695102:pla-310159579847&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=51718439&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+No template found for ProposalsController#url, rendering head :no_content
+Completed 204 No Content in 3288ms (ActiveRecord: 0.6ms)
+
+
