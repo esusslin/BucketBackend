@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 # If you're not developing on master deploy with:
 
 # git push heroku your_branch_name:master
-
+root 'messages#index'
 
   post 'proposals/url', to: 'proposals#url'
 
