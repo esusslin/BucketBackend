@@ -8,8 +8,7 @@ skip_before_action :verify_authenticity_token
   end
 
   def url
-
-    p params
+         p params
 
     key = 'SEM3770FE56767FEDC920DD0DE5EA0480975'
     secret = 'Y2VkNzlkODQwYTI5NjAxMjAxOTEwYTdhMmQwN2I5ODQ'
@@ -19,6 +18,13 @@ skip_before_action :verify_authenticity_token
     sem3.products_field("url", params[:url])
     productsHash = sem3.get_products()
     bigJson = productsHash.to_json
+
+    p productsHash
+    p "_________________________________"
+
+    p bigJson
+
+
     p "-------------------------------------"
     theprice = productsHash["results"][0]["price"]
 
@@ -28,6 +34,8 @@ skip_before_action :verify_authenticity_token
     priceString = theprice.to_s
     bucketPriceString = bucketprice.to_s
     p name
+
+    p priceString
 
 
 
@@ -44,9 +52,8 @@ skip_before_action :verify_authenticity_token
       from: "5189074976",
       body: "Emmet: Looks like you're intereseted in buying a #{name}. The best current market price for this item is $ " + priceString + ".00 via Amazon.  You can finance this purchase today with a bucket for " +  bucketPriceString + ".00 / month.  Item is delivered in 2 business days" 
       )
-
-
   end
+  
 
   # GET /proposals/1
   # GET /proposals/1.json
