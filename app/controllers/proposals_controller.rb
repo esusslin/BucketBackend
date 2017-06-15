@@ -8,7 +8,11 @@ skip_before_action :verify_authenticity_token
   end
 
   def url
-         p params
+        p params
+
+        
+
+        
 
     key = 'SEM3770FE56767FEDC920DD0DE5EA0480975'
     secret = 'Y2VkNzlkODQwYTI5NjAxMjAxOTEwYTdhMmQwN2I5ODQ'
@@ -18,46 +22,104 @@ skip_before_action :verify_authenticity_token
     sem3.products_field("url", params[:url])
     productsHash = sem3.get_products()
     bigJson = productsHash.to_json
-
-    p productsHash
+ p "-------------------------------------"
+   
     p "_________________________________"
 
-    p bigJson
+     priceString = productsHash["results"][0]["price"]
+     imageString = productsHash["results"][0]["images"][0]
+     nameString = productsHash["results"][0]["name"]
 
-
-    p "-------------------------------------"
-    theprice = productsHash["results"][0]["price"]
-
-    name = productsHash["results"][0]["name"]
-    bucketprice = theprice.to_i / 8
-
-    priceString = theprice.to_s
-    bucketPriceString = bucketprice.to_s
-    p name
-
-    p priceString
-
-
-
+     offers = productsHash["results"][0]["sitedetails"]
+ p "-------------------------------------"
+ p "-------------------------------------"
     p "-------------------------------------"
 
+# nameAry = []
+# priceAry = []
 
-    account_sid = "AC73e582be2582353535dc5a45da68b72d"
+#     for p in offers 
 
-    auth_token = "553c4cd8a6a61ab103419abd1cd25ebd"
-    client = Twilio::REST::Client.new(account_sid, auth_token)
+#       priceAry << p["listprice"]
+#       nameAry << p["priceAry"]
 
-     client.messages.create(
-      to: "8023094153",
-      from: "5189074976",
-      body: "Emmet: Looks like you're intereseted in buying a #{name}. The best current market price for this item is $ " + priceString + ".00 via Amazon.  You can finance this purchase today with a bucket for " +  bucketPriceString + ".00 / month.  Item is delivered in 2 business days" 
-      )
+#     end
+p "-------------------------------------"
+p nameString
+p imageString
+p priceString
+
+p "-------------------------------------"
+# # results.fetch("price")
+
+
+
+prop = Proposal.new
+prop.item = nameString
+prop.imageString = imageString
+prop.price = priceString.to_f
+
+prop.save
+
+p prop
+
+render json: prop
+
+
+   # p productsHash["results"].length
+
+    # render json: bigJson
+
+    # p "-------------------------------------"
+
+
+    # account_sid = "AC73e582be2582353535dc5a45da68b72d"
+
+    # auth_token = "553c4cd8a6a61ab103419abd1cd25ebd"
+    # client = Twilio::REST::Client.new(account_sid, auth_token)
+
+    #  client.messages.create(
+    #   to: "8023094153",
+    #   from: "5189074976",
+    #   body: "Emmet: Looks like you're intereseted in buying a #{name}. The best current market price for this item is $ " + priceString + ".00 via Amazon.  You can finance this purchase today with a bucket for " +  bucketPriceString + ".00 / month.  Item is delivered in 2 business days" 
+    #   )
   end
   
 
   # GET /proposals/1
   # GET /proposals/1.json
   def show
+         p params
+
+    # key = 'SEM3770FE56767FEDC920DD0DE5EA0480975'
+    # secret = 'Y2VkNzlkODQwYTI5NjAxMjAxOTEwYTdhMmQwN2I5ODQ'
+
+    # sem3 = Semantics3::Products.new(key,secret)
+
+    # sem3.products_field("url", params[:url])
+    # productsHash = sem3.get_products()
+    # bigJson = productsHash.to_json
+
+    # p productsHash
+    # p "_________________________________"
+
+    
+
+
+    # p "-------------------------------------"
+    # theprice = productsHash["results"][0]["price"]
+
+    # name = productsHash["results"][0]["name"]
+    # bucketprice = theprice.to_i / 8
+
+    # priceString = theprice.to_s
+    # bucketPriceString = bucketprice.to_s
+    # p name
+
+    # p priceString
+
+    render json: bigJson
+
   end
 
   # GET /proposals/new
