@@ -3872,3 +3872,2927 @@ Processing by ProposalsController#url as */*
 Completed 200 OK in 556ms (Views: 0.4ms | ActiveRecord: 3.8ms)
 
 
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-14 20:10:55 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.target.com/p/hoover-174-max-extract-153-60-pressure-pro-153-carpet-deep-cleaner-fh50220/-/A-13037204", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 535ms (Views: 0.3ms | ActiveRecord: 11.4ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-14 20:11:31 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/36-000-BTU-Dual-Grill-Black/54316097?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227054092233&wmlspartner=wmtlabs&wl0=&wl1=g&wl2=c&wl3=154923246136&wl4=pla-289324872394&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=54316097&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 770ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-14 21:31:22 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/36-000-BTU-Dual-Grill-Black/54316097", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 515ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-14 21:32:44 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/36-000-BTU-Dual-Grill-Black/54316097", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 515ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-14 21:37:32 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/36-000-BTU-Dual-Grill-Black/54316097", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 498ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:30:00 -0700
+  [1m[35m (7.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 569ms (Views: 0.4ms | ActiveRecord: 4.3ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:36:34 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 592ms (Views: 0.3ms | ActiveRecord: 4.6ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:36:37 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 450ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:36:46 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 489ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:41:16 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 487ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:43:29 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"[\"months\": <null>, \"imageString\": http://sem3-idn.s3-website-us-east-1.amazonaws.com/128e67a106566ea787c0b8bdd99b6f72,0.jpg, \"updated_at\": <null>, \"id\": <null>, \"item\": 5-Burner Gas Grill, Stainless Steel/Black, \"created_at\": <null>, \"monthly\": <null>, \"user_id\": <null>, \"price\": 156.07] [Bucket1.Proposal]", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 552ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:29:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:43:47 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 466ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:45:06 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 506ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:46:24 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 777ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:47:45 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 492ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:49:05 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 541ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:49:37 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"myProposals.append(proposal1)", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 398ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:29:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:50:00 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 435ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:50:38 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 489ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:52:14 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"print(myProposals[1].item)", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 894ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:29:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:52:24 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 511ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:55:24 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 538ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:55:51 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 453ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:58:23 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 535ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:58:27 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 435ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:58:49 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 454ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:58:54 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 511ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:58:59 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 595ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:59:04 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 450ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:59:13 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 406ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 10:59:21 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 436ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 11:07:37 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"loadProposals()         fuckingChrist()", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 535ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:29:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 11:12:38 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 537ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 11:13:27 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 459ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 11:15:23 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 507ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 11:17:32 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 572ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 11:24:12 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 510ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 11:31:24 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 489ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 11:32:16 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 462ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 11:34:10 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 480ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 11:37:40 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 485ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 11:41:39 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 545ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 11:43:15 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 496ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 11:51:05 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.walmart.com/ip/Backyard-Grill-5-Burner-Gas-Grill/49760308?wmlspartner=wlpa&selectedSellerId=0&adid=22222222227039013211&wl0=&wl1=g&wl2=c&wl3=92171710337&wl4=pla-183824704577&wl5=9031914&wl6=&wl7=9031967&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=49760308&wl13=&veh=sem", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 531ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 12:51:37 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Phantom-Wireless-Bluetooth-Waterproof-Shockproof/dp/B014M8ZO8S/ref=sr_1_1?ie=UTF8&qid=1497556276&sr=8-1&keywords=UE+speakers", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 517ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 12:53:00 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Phantom-Wireless-Bluetooth-Waterproof-Shockproof/dp/B014M8ZO8S/ref=sr_1_1?ie=UTF8&qid=1497556276&sr=8-1&keywords=UE+speakers", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 483ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 12:56:25 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"let catPictureURL = URL(string: \"http://i.imgur.com/w5rkSIj.jpg\")! ", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 12:56:25 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"let catPictureURL = URL(string: \"http://i.imgur.com/w5rkSIj.jpg\")! ", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 465ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:29:in `url'
+Completed 500 Internal Server Error in 403ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:29:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 12:56:37 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Phantom-Wireless-Bluetooth-Waterproof-Shockproof/dp/B014M8ZO8S/ref=sr_1_1?ie=UTF8&qid=1497556276&sr=8-1&keywords=UE+speakers", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 493ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 13:05:32 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Phantom-Wireless-Bluetooth-Waterproof-Shockproof/dp/B014M8ZO8S/ref=sr_1_1?ie=UTF8&qid=1497556276&sr=8-1&keywords=UE+speakers", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 525ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 13:17:07 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-Bluetooth-Speaker-Waterproof-Shockproof/dp/B00YARCGHO", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 551ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 13:17:59 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-Bluetooth-Speaker-Waterproof-Shockproof/dp/B00YARCGHO", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 489ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 13:27:19 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/UE-BOOM-Wireless-Bluetooth-Speaker/dp/B00CM0XHNS", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 1739ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 13:29:20 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/UE-BOOM-Wireless-Bluetooth-Speaker/dp/B00CM0XHNS", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 537ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 13:30:12 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/UE-BOOM-Wireless-Bluetooth-Speaker/dp/B00CM0XHNS", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 472ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 13:36:06 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/UE-BOOM-Wireless-Bluetooth-Speaker/dp/B00CM0XHNS", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 540ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 13:48:52 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/UE-BOOM-Wireless-Bluetooth-Speaker/dp/B00CM0XHNS", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 642ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 13:58:02 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/UE-BOOM-Wireless-Bluetooth-Speaker/dp/B00CM0XHNS", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 1027ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:00:32 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/UE-BOOM-Wireless-Bluetooth-Speaker/dp/B00CM0XHNS", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 471ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:03:47 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://calm-castle-11120.herokuapp.com/users/1/buckets", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 478ms (ActiveRecord: 1.7ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:29:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:04:54 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://calm-castle-11120.herokuapp.com/users/1/buckets", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 430ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:29:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:07:18 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://localhost:3000/users/1/buckets", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:07:18 -0700
+Completed 500 Internal Server Error in 481ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:29:in `url'
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://localhost:3000/users/1/buckets", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 379ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:29:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:07:47 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/dp/B01M4JJ4NZ?ref_=ams_ad_dp_asin_2", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 440ms (Views: 0.5ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:14:47 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 477ms (ActiveRecord: 1.4ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:29:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:15:27 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 363ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:29:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:15:28 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 364ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:29:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:15:29 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 395ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:29:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:15:30 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 419ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:29:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:16:06 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 426ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:29:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:16:11 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 1211ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:29:in `url'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (7.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (196.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "db/development"[0m
+  [1m[35m (196.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "db/test"[0m
+  [1m[35m (474.6ms)[0m  [1m[35mCREATE DATABASE "db/development" ENCODING = 'utf8'[0m
+  [1m[35m (390.9ms)[0m  [1m[35mCREATE DATABASE "db/test" ENCODING = 'utf8'[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8115692404137957555);[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20170613161557)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "checking_acct" float, "savings_acct" float, "monthly" float, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170613161557"]]
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateProposals (20170613162011)
+  [1m[35m (6.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.9ms)[0m  [1m[35mCREATE TABLE "proposals" ("id" bigserial primary key, "item" character varying, "price" float, "monthly" float, "months" float, "imageString" character varying, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_0224a90884"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_proposals_on_user_id" ON "proposals"  ("user_id")[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170613162011"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateBuckets (20170613162406)
+  [1m[35m (5.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.5ms)[0m  [1m[35mCREATE TABLE "buckets" ("id" bigserial primary key, "item" character varying, "monthly" float, "months" float, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_1d8aa9e992"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE  INDEX  "index_buckets_on_user_id" ON "buckets"  ("user_id")[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170613162406"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-06-15 21:20:30.601545"], ["updated_at", "2017-06-15 21:20:30.601545"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8115692404137957555)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2017-06-15 14:33:04 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.1) lib/action_dispatch/http/request.rb:82:in `controller_class'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/usr/local/Cellar/ruby/2.4.1_1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/usr/local/Cellar/ruby/2.4.1_1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/usr/local/Cellar/ruby/2.4.1_1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:36:06 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/emmet/Desktop/BucketBackend/app/controllers/proposals_controller.rb:44: syntax error, unexpected $undefined, expecting keyword_end
+----------------------------"\\
+                              ^):
+  
+app/controllers/proposals_controller.rb:44: syntax error, unexpected $undefined, expecting keyword_end
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:37:00 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/emmet/Desktop/BucketBackend/app/controllers/proposals_controller.rb:44: syntax error, unexpected $undefined, expecting keyword_end
+----------------------------"\\
+                              ^):
+  
+app/controllers/proposals_controller.rb:44: syntax error, unexpected $undefined, expecting keyword_end
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:37:21 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Ddigital-text&field-keywords=UE+speaker", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 560ms (ActiveRecord: 2.5ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:37:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:37:46 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Ddigital-text&field-keywords=UE+speaker", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 394ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:37:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:37:48 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Ddigital-text&field-keywords=UE+speaker", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 422ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:37:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:37:48 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Ddigital-text&field-keywords=UE+speaker", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:37:48 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Ddigital-text&field-keywords=UE+speaker", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:37:48 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Ddigital-text&field-keywords=UE+speaker", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:37:49 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Ddigital-text&field-keywords=UE+speaker", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 390ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:37:in `url'
+Completed 500 Internal Server Error in 399ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:37:49 -0700
+app/controllers/proposals_controller.rb:37:in `url'
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Ddigital-text&field-keywords=UE+speaker", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 630ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:37:in `url'
+Completed 500 Internal Server Error in 548ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:37:in `url'
+Completed 500 Internal Server Error in 533ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:37:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:38:37 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Ddigital-text&field-keywords=UE+speaker", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 447ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:29:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:39:11 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Ddigital-text&field-keywords=UE+speaker", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 374ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:29:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:39:43 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Ddigital-text&field-keywords=UE+speaker", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 479ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:29:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:40:38 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Ddigital-text&field-keywords=UE+speaker", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 399ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:29:in `url'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (188.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "db/development"[0m
+  [1m[35m (196.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "db/test"[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8115692404137957555);[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20170613161557)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "checking_acct" float, "savings_acct" float, "monthly" float, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170613161557"]]
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateProposals (20170613162011)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "proposals" ("id" bigserial primary key, "item" character varying, "price" float, "monthly" float, "months" float, "imageString" character varying, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_0224a90884"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX  "index_proposals_on_user_id" ON "proposals"  ("user_id")[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170613162011"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateBuckets (20170613162406)
+  [1m[35m (5.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (13.3ms)[0m  [1m[35mCREATE TABLE "buckets" ("id" bigserial primary key, "item" character varying, "monthly" float, "months" float, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_1d8aa9e992"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE  INDEX  "index_buckets_on_user_id" ON "buckets"  ("user_id")[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170613162406"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-06-15 21:42:31.260289"], ["updated_at", "2017-06-15 21:42:31.260289"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8115692404137957555)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2017-06-15 14:42:47 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.1) lib/action_dispatch/http/request.rb:82:in `controller_class'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-15 14:43:27 -0700
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:44:35 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Ddigital-text&field-keywords=UE+speaker", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 498ms (ActiveRecord: 2.1ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:29:in `url'
+Started GET "/" for 127.0.0.1 at 2017-06-15 14:45:08 -0700
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.1) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.1) lib/action_dispatch/http/request.rb:82:in `controller_class'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:45:19 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Ddigital-text&field-keywords=UE+speaker", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 401ms (ActiveRecord: 1.7ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:28:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:46:40 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Ddigital-text&field-keywords=UE+speaker", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 470ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:28:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:49:18 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 609ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:28:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:49:21 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 434ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:28:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:49:55 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 454ms (ActiveRecord: 1.9ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:28:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:50:26 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 439ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:28:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:52:37 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 448ms (ActiveRecord: 1.7ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:28:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:53:11 -0700
+  
+AbstractController::ActionNotFound (The action 'url' could not be found for ProposalsController):
+  
+actionpack (5.1.1) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.1) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.1) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:53:31 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+No template found for ProposalsController#url, rendering head :no_content
+Completed 204 No Content in 61ms (ActiveRecord: 1.7ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:53:34 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+No template found for ProposalsController#url, rendering head :no_content
+Completed 204 No Content in 63ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:53:35 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+No template found for ProposalsController#url, rendering head :no_content
+Completed 204 No Content in 64ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:54:24 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-Bluetooth-Speaker-Waterproof-Shockproof/dp/B00YARCGHO", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+No template found for ProposalsController#url, rendering head :no_content
+Completed 204 No Content in 59ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:54:25 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-Bluetooth-Speaker-Waterproof-Shockproof/dp/B00YARCGHO", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+No template found for ProposalsController#url, rendering head :no_content
+Completed 204 No Content in 61ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:54:26 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-Bluetooth-Speaker-Waterproof-Shockproof/dp/B00YARCGHO", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+No template found for ProposalsController#url, rendering head :no_content
+Completed 204 No Content in 61ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:54:27 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-Bluetooth-Speaker-Waterproof-Shockproof/dp/B00YARCGHO", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+No template found for ProposalsController#url, rendering head :no_content
+Completed 204 No Content in 63ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:54:50 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-Bluetooth-Speaker-Waterproof-Shockproof/dp/B00YARCGHO", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+No template found for ProposalsController#url, rendering head :no_content
+Completed 204 No Content in 529ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:56:49 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-Bluetooth-Speaker-Waterproof-Shockproof/dp/B00YARCGHO", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 548ms (Views: 0.4ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:57:22 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-Bluetooth-Speaker-Waterproof-Shockproof/dp/B00YARCGHO", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 457ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 14:57:42 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-Bluetooth-Speaker-Waterproof-Shockproof/dp/B00YARCGHO", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 450ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 15:05:00 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/emmet/Desktop/BucketBackend/app/controllers/proposals_controller.rb:144: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/proposals_controller.rb:144: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 15:07:00 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/emmet/Desktop/BucketBackend/app/controllers/proposals_controller.rb:144: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/proposals_controller.rb:144: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 15:07:30 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-Bluetooth-Speaker-Waterproof-Shockproof/dp/B00YARCGHO", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 578ms (Views: 0.4ms | ActiveRecord: 4.4ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 15:07:44 -0700
+  
+SyntaxError (/Users/emmet/Desktop/BucketBackend/app/controllers/proposals_controller.rb:142: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/proposals_controller.rb:142: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 15:07:46 -0700
+  
+SyntaxError (/Users/emmet/Desktop/BucketBackend/app/controllers/proposals_controller.rb:142: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/proposals_controller.rb:142: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 15:07:49 -0700
+  
+SyntaxError (/Users/emmet/Desktop/BucketBackend/app/controllers/proposals_controller.rb:142: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/proposals_controller.rb:142: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 15:07:54 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-Bluetooth-Speaker-Waterproof-Shockproof/dp/B00YARCGHO", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 503ms (Views: 0.3ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 15:08:11 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-Bluetooth-Speaker-Waterproof-Shockproof/dp/B00YARCGHO", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 441ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 15:11:44 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-Bluetooth-Speaker-Waterproof-Shockproof/dp/B00YARCGHO", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 538ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 15:12:37 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-Bluetooth-Speaker-Waterproof-Shockproof/dp/B00YARCGHO", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 459ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 15:12:46 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-Bluetooth-Speaker-Waterproof-Shockproof/dp/B00YARCGHO", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 469ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 15:14:31 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-Bluetooth-Speaker-Waterproof-Shockproof/dp/B00YARCGHO", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 456ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:14:40 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/users/lol"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 15:15:31 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-Bluetooth-Speaker-Waterproof-Shockproof/dp/B00YARCGHO", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 478ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:15:45 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/users/lol"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:15:47 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/users/lol"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:15:48 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/users/lol"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:15:48 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/users/lol"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:15:50 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/users/lol"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:16:35 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+No template found for UsersController#lol, rendering head :no_content
+Completed 204 No Content in 58ms (ActiveRecord: 1.6ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:16:42 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+No template found for UsersController#lol, rendering head :no_content
+Completed 204 No Content in 59ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:16:43 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+No template found for UsersController#lol, rendering head :no_content
+Completed 204 No Content in 62ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:16:44 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+No template found for UsersController#lol, rendering head :no_content
+Completed 204 No Content in 61ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:16:46 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+No template found for UsersController#lol, rendering head :no_content
+Completed 204 No Content in 62ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:16:46 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+No template found for UsersController#lol, rendering head :no_content
+Completed 204 No Content in 62ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:16:47 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+No template found for UsersController#lol, rendering head :no_content
+Completed 204 No Content in 61ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:16:47 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+No template found for UsersController#lol, rendering head :no_content
+Completed 204 No Content in 60ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:16:48 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+No template found for UsersController#lol, rendering head :no_content
+Completed 204 No Content in 64ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:18:52 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 25ms (Views: 0.3ms | ActiveRecord: 4.8ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:19:13 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 15ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:19:15 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:19:23 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 6.5ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:19:25 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:19:26 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:19:26 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:19:27 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:20:00 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:20:13 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:20:14 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:20:15 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:22:29 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 1.8ms)
+
+
+  
+NoMethodError (undefined method `let' for #<UsersController:0x007f95d5a3b5e8>):
+  
+app/controllers/users_controller.rb:10:in `lol'
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:22:32 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `let' for #<UsersController:0x007f95d5cbe6d0>):
+  
+app/controllers/users_controller.rb:10:in `lol'
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:22:40 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 19ms (Views: 0.4ms | ActiveRecord: 4.7ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8115692404137957555);[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8115692404137957555)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:23:34 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 34ms (Views: 0.4ms | ActiveRecord: 6.4ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:28:10 -0700
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:28:20 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 17ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:30:36 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:30:38 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:30:42 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:30:49 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:30:53 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>6, "monthly"=>14.81, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 15:32:27 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-Bluetooth-Speaker-Waterproof-Shockproof/dp/B00YARCGHO", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 629ms (Views: 0.3ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:32:37 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>8, "monthly"=>10.2, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 15:33:57 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>" \\(bucket.item) ..!\", message: \"This bucket fills in \\(bucket.months)", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 466ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:27:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 15:34:12 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-Bluetooth-Speaker-Waterproof-Shockproof/dp/B00YARCGHO", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 426ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:34:20 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>4, "monthly"=>16.89, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:34:21 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>4, "monthly"=>16.89, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:35:48 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>4, "monthly"=>16.89, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'price' for Bucket.):
+  
+app/controllers/users_controller.rb:12:in `lol'
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:36:05 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>4, "monthly"=>16.89, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'price' for Bucket.):
+  
+app/controllers/users_controller.rb:12:in `lol'
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:36:24 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>4, "monthly"=>16.89, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'price' for Bucket.):
+  
+app/controllers/users_controller.rb:12:in `lol'
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:36:25 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>4, "monthly"=>16.89, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'price' for Bucket.):
+  
+app/controllers/users_controller.rb:12:in `lol'
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:36:31 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>3, "monthly"=>31.59, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'price' for Bucket.):
+  
+app/controllers/users_controller.rb:12:in `lol'
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:36:33 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>3, "monthly"=>31.59, "item"=>"UE ROLL Wireless Mobile Bluetooth Speaker (Waterproof and Shockproof) - Volcano", "price"=>82.93}, "user"=>{}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'price' for Bucket.):
+  
+app/controllers/users_controller.rb:12:in `lol'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8115692404137957555);[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8115692404137957555)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 15:50:02 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/UE-BOOM-Wireless-Bluetooth-Speaker/dp/B00CM0XHNS", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 544ms (Views: 0.4ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:50:12 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>3, "monthly"=>38.74, "item"=>"UE - BOOM Wireless Bluetooth Speaker - Black", "price"=>106.45}, "user"=>{}}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 11.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'price' for Bucket.):
+  
+app/controllers/users_controller.rb:12:in `lol'
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:50:14 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>3, "monthly"=>38.74, "item"=>"UE - BOOM Wireless Bluetooth Speaker - Black", "price"=>106.45}, "user"=>{}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'price' for Bucket.):
+  
+app/controllers/users_controller.rb:12:in `lol'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (192.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "db/development"[0m
+  [1m[35m (191.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "db/test"[0m
+  [1m[35m (373.1ms)[0m  [1m[35mCREATE DATABASE "db/development" ENCODING = 'utf8'[0m
+  [1m[35m (395.2ms)[0m  [1m[35mCREATE DATABASE "db/test" ENCODING = 'utf8'[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8115692404137957555);[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20170613161557)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "checking_acct" float, "savings_acct" float, "monthly" float, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170613161557"]]
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateProposals (20170613162011)
+  [1m[35m (6.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (20.0ms)[0m  [1m[35mCREATE TABLE "proposals" ("id" bigserial primary key, "item" character varying, "price" float, "monthly" float, "months" float, "imageString" character varying, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_0224a90884"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_proposals_on_user_id" ON "proposals"  ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170613162011"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateBuckets (20170613162406)
+  [1m[35m (5.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.1ms)[0m  [1m[35mCREATE TABLE "buckets" ("id" bigserial primary key, "item" character varying, "monthly" float, "price" float, "months" float, "imageString" float, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_1d8aa9e992"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE  INDEX  "index_buckets_on_user_id" ON "buckets"  ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170613162406"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-06-15 22:53:54.992626"], ["updated_at", "2017-06-15 22:53:54.992626"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8115692404137957555)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 15:54:04 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>4, "monthly"=>21.16, "item"=>"UE - BOOM Wireless Bluetooth Speaker - Black", "price"=>106.45}, "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 45ms (Views: 0.6ms | ActiveRecord: 7.0ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 16:04:57 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/UE-BOOM-Wireless-Bluetooth-Speaker/dp/B00CM0XHNS", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 498ms (Views: 0.3ms | ActiveRecord: 8.8ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 16:05:05 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>3, "monthly"=>28.23, "item"=>"UE - BOOM Wireless Bluetooth Speaker - Black", "price"=>106.45}, "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8115692404137957555);[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8115692404137957555)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 16:10:50 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-portable-Bluetooth-Speaker-Caseling/dp/B01I21JCWU/ref=pd_lpo_vtph_147_lp_tr_t_3?_encoding=UTF8&psc=1&refRID=S9TTTV6Z4A42PD0PCG2S", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 569ms (ActiveRecord: 1.6ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:27:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 16:12:12 -0700
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 16:12:22 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-portable-Bluetooth-Speaker-Caseling/dp/B01I21JCWU/ref=pd_lpo_vtph_147_lp_tr_t_3?_encoding=UTF8&psc=1&refRID=S9TTTV6Z4A42PD0PCG2S", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 449ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:27:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 16:12:23 -0700
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 16:12:23 -0700
+Processing by ProposalsController#url as */*
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 16:12:23 -0700
+Processing by ProposalsController#url as */*
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-portable-Bluetooth-Speaker-Caseling/dp/B01I21JCWU/ref=pd_lpo_vtph_147_lp_tr_t_3?_encoding=UTF8&psc=1&refRID=S9TTTV6Z4A42PD0PCG2S", "user_id"=>"1", "proposal"=>{"url"=>"https://www.amazon.com/Wireless-portable-Bluetooth-Speaker-Caseling/dp/B01I21JCWU/ref=pd_lpo_vtph_147_lp_tr_t_3?_encoding=UTF8&psc=1&refRID=S9TTTV6Z4A42PD0PCG2S", "user_id"=>"1"}}
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-portable-Bluetooth-Speaker-Caseling/dp/B01I21JCWU/ref=pd_lpo_vtph_147_lp_tr_t_3?_encoding=UTF8&psc=1&refRID=S9TTTV6Z4A42PD0PCG2S", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-portable-Bluetooth-Speaker-Caseling/dp/B01I21JCWU/ref=pd_lpo_vtph_147_lp_tr_t_3?_encoding=UTF8&psc=1&refRID=S9TTTV6Z4A42PD0PCG2S", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-portable-Bluetooth-Speaker-Caseling/dp/B01I21JCWU/ref=pd_lpo_vtph_147_lp_tr_t_3?_encoding=UTF8&psc=1&refRID=S9TTTV6Z4A42PD0PCG2S", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 408ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:27:in `url'
+Completed 500 Internal Server Error in 419ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:27:in `url'
+Completed 500 Internal Server Error in 461ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:27:in `url'
+Completed 500 Internal Server Error in 490ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:27:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 16:12:24 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-portable-Bluetooth-Speaker-Caseling/dp/B01I21JCWU/ref=pd_lpo_vtph_147_lp_tr_t_3?_encoding=UTF8&psc=1&refRID=S9TTTV6Z4A42PD0PCG2S", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 16:12:24 -0700
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 16:12:24 -0700
+Processing by ProposalsController#url as */*
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-portable-Bluetooth-Speaker-Caseling/dp/B01I21JCWU/ref=pd_lpo_vtph_147_lp_tr_t_3?_encoding=UTF8&psc=1&refRID=S9TTTV6Z4A42PD0PCG2S", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-portable-Bluetooth-Speaker-Caseling/dp/B01I21JCWU/ref=pd_lpo_vtph_147_lp_tr_t_3?_encoding=UTF8&psc=1&refRID=S9TTTV6Z4A42PD0PCG2S", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 16:12:24 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-portable-Bluetooth-Speaker-Caseling/dp/B01I21JCWU/ref=pd_lpo_vtph_147_lp_tr_t_3?_encoding=UTF8&psc=1&refRID=S9TTTV6Z4A42PD0PCG2S", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 574ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:27:in `url'
+Completed 500 Internal Server Error in 417ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:27:in `url'
+Completed 500 Internal Server Error in 508ms (ActiveRecord: 0.0ms)
+
+
+Completed 500 Internal Server Error in 527ms (ActiveRecord: 0.0ms)
+
+
+  
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 16:12:25 -0700
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+Processing by ProposalsController#url as */*
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-portable-Bluetooth-Speaker-Caseling/dp/B01I21JCWU/ref=pd_lpo_vtph_147_lp_tr_t_3?_encoding=UTF8&psc=1&refRID=S9TTTV6Z4A42PD0PCG2S", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  
+app/controllers/proposals_controller.rb:27:in `url'
+app/controllers/proposals_controller.rb:27:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 16:12:25 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-portable-Bluetooth-Speaker-Caseling/dp/B01I21JCWU/ref=pd_lpo_vtph_147_lp_tr_t_3?_encoding=UTF8&psc=1&refRID=S9TTTV6Z4A42PD0PCG2S", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 16:12:25 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-portable-Bluetooth-Speaker-Caseling/dp/B01I21JCWU/ref=pd_lpo_vtph_147_lp_tr_t_3?_encoding=UTF8&psc=1&refRID=S9TTTV6Z4A42PD0PCG2S", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 657ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:27:in `url'
+Completed 500 Internal Server Error in 506ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:27:in `url'
+Completed 500 Internal Server Error in 519ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:27:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 17:42:53 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-portable-Bluetooth-Speaker-Caseling/dp/B01I21JCWU/ref=pd_lpo_vtph_147_lp_tr_t_3?_encoding=UTF8&psc=1&refRID=S9TTTV6Z4A42PD0PCG2S", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 455ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:27:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 17:43:10 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-portable-Bluetooth-Speaker-Caseling/dp/B01I21JCWU/ref=pd_lpo_vtph_147_lp_tr_t_3?_encoding=UTF8&psc=1&refRID=S9TTTV6Z4A42PD0PCG2S", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 399ms (ActiveRecord: 1.7ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:27:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 17:43:34 -0700
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 17:43:44 -0700
+  
+SyntaxError (/Users/emmet/Desktop/BucketBackend/app/controllers/proposals_controller.rb:47: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/proposals_controller.rb:47: syntax error, unexpected end-of-input, expecting keyword_end
+  
+SyntaxError (/Users/emmet/Desktop/BucketBackend/app/controllers/proposals_controller.rb:47: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/proposals_controller.rb:47: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 17:43:58 -0700
+  
+SyntaxError (/Users/emmet/Desktop/BucketBackend/app/controllers/proposals_controller.rb:45: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/proposals_controller.rb:45: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 17:44:15 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Wireless-portable-Bluetooth-Speaker-Caseling/dp/B01I21JCWU/ref=pd_lpo_vtph_147_lp_tr_t_3?_encoding=UTF8&psc=1&refRID=S9TTTV6Z4A42PD0PCG2S", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 498ms (ActiveRecord: 2.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:27:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 17:44:46 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/dp/B01M4JJ4NZ?ref_=ams_ad_dp_asin_2", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 433ms (Views: 0.3ms | ActiveRecord: 4.8ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 17:45:05 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>3, "monthly"=>34.05, "imageString"=>"http://sem3-idn.s3-website-us-east-1.amazonaws.com/14d3d19510ee773ac519c69adbba4c09,0.jpg", "item"=>"Ultimate Ears BOOM 2 Meteor Wireless Mobile Bluetooth Speaker-Waterproof and Shockproof (Diameter: 67mm. Height: 180mm. Weight: 548g)", "price"=>129.99}, "user"=>{}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 26ms (Views: 0.5ms | ActiveRecord: 7.0ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 17:51:12 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/dp/B01M4JJ4NZ?ref_=ams_ad_dp_asin_2", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 526ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 17:55:50 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"print(proposal.imageString)", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 17:55:51 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"print(proposal.imageString)", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 433ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:27:in `url'
+Completed 500 Internal Server Error in 430ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:27:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 17:56:00 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/dp/B01M4JJ4NZ?ref_=ams_ad_dp_asin_2", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 1995ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 17:58:50 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/dp/B01M4JJ4NZ?ref_=ams_ad_dp_asin_2", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 492ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mProposal Load (3.1ms)[0m  [1m[34mSELECT  "proposals".* FROM "proposals" LIMIT $1[0m  [["LIMIT", 11]]
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 18:55:36 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/UE-BOOM-Wireless-Bluetooth-Speaker/dp/B00CM0XHNS", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 732ms (Views: 0.3ms | ActiveRecord: 5.2ms)
+
+
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT  "proposals".* FROM "proposals" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT  "proposals".* FROM "proposals" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 19:05:01 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/UE-BOOM-Wireless-Bluetooth-Speaker/dp/B00CM0XHNS", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 1679ms (Views: 0.3ms | ActiveRecord: 2.9ms)
+
+
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT  "proposals".* FROM "proposals" ORDER BY "proposals"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (7.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2017-06-16 02:06:31.650263"], ["updated_at", "2017-06-16 02:06:31.650263"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "proposals" ("price", "monthly", "months", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["price", 0.99], ["monthly", 34.0], ["months", 9.0], ["user_id", 1], ["created_at", "2017-06-16 02:08:43.474150"], ["updated_at", "2017-06-16 02:08:43.474150"]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 19:09:04 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/UE-BOOM-Wireless-Bluetooth-Speaker/dp/B00CM0XHNS", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "proposals" ("price", "monthly", "imageString", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["price", 106.45], ["monthly", 8.0], ["imageString", "http://sem3-idn.s3-website-us-east-1.amazonaws.com/64bd93d097de4055f311e93d63cb7c76,0.jpg"], ["user_id", 1], ["created_at", "2017-06-16 02:09:05.344922"], ["updated_at", "2017-06-16 02:09:05.344922"]]
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 718ms (Views: 0.6ms | ActiveRecord: 7.5ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (162.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "db/development"[0m
+  [1m[35m (198.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "db/test"[0m
+  [1m[35m (475.8ms)[0m  [1m[35mCREATE DATABASE "db/development" ENCODING = 'utf8'[0m
+  [1m[35m (390.2ms)[0m  [1m[35mCREATE DATABASE "db/test" ENCODING = 'utf8'[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8115692404137957555);[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20170613161557)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "checking_acct" float, "savings_acct" float, "monthly" float, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170613161557"]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateProposals (20170613162011)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "proposals" ("id" bigserial primary key, "item" character varying, "price" float, "monthly" float, "months" float, "imageString" character varying, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_0224a90884"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_proposals_on_user_id" ON "proposals"  ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170613162011"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateBuckets (20170613162406)
+  [1m[35m (5.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.1ms)[0m  [1m[35mCREATE TABLE "buckets" ("id" bigserial primary key, "item" character varying, "monthly" float, "price" float, "months" float, "imageString" character varying, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_1d8aa9e992"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE  INDEX  "index_buckets_on_user_id" ON "buckets"  ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170613162406"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-06-16 02:10:05.104709"], ["updated_at", "2017-06-16 02:10:05.104709"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8115692404137957555)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["first_name", "Larry"], ["created_at", "2017-06-16 02:11:50.262192"], ["updated_at", "2017-06-16 02:11:50.262192"]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 19:14:22 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/UE-BOOM-Wireless-Bluetooth-Speaker/dp/B00CM0XHNS", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "proposals" ("item", "price", "monthly", "imageString", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["item", "UE - BOOM Wireless Bluetooth Speaker - Black"], ["price", 106.45], ["monthly", 8.0], ["imageString", "http://sem3-idn.s3-website-us-east-1.amazonaws.com/64bd93d097de4055f311e93d63cb7c76,0.jpg"], ["user_id", 1], ["created_at", "2017-06-16 02:14:23.374878"], ["updated_at", "2017-06-16 02:14:23.374878"]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 598ms (Views: 0.6ms | ActiveRecord: 12.5ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 19:19:14 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/UE-BOOM-Wireless-Bluetooth-Speaker/dp/B00CM0XHNS", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "proposals" ("item", "price", "monthly", "imageString", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["item", "UE - BOOM Wireless Bluetooth Speaker - Black"], ["price", 106.45], ["monthly", 8.0], ["imageString", "http://sem3-idn.s3-website-us-east-1.amazonaws.com/64bd93d097de4055f311e93d63cb7c76,0.jpg"], ["user_id", 1], ["created_at", "2017-06-16 02:19:25.264476"], ["updated_at", "2017-06-16 02:19:25.264476"]]
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 590ms (Views: 0.5ms | ActiveRecord: 6.6ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 19:26:24 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"  if let JSON = response.result.value as? [String:Any] {                     print(JSON)                                          let proposal1 = Proposal(item: JSON[\"item\"] as! String, price: JSON[\"price\"] as! Double, imageString: JSON[\"imageString\"] as! String) //                    let proposal2 = Proposal(item: JSON[\"item\"] as! String, price: JSON[\"price\"] as! Double, imageString: JSON[\"imageString\"] as! String) //                    let proposal3 = Proposal(item: JSON[\"item\"] as! String, price: JSON[\"price\"] as! Double, imageString: JSON[\"imageString\"] as! String)                                          print(proposal1)                     myProposals.append(proposal1) ", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+Completed 500 Internal Server Error in 647ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/proposals_controller.rb:29:in `url'
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 19:26:35 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/UE-BOOM-Wireless-Bluetooth-Speaker/dp/B00CM0XHNS", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "proposals" ("item", "price", "monthly", "imageString", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["item", "UE - BOOM Wireless Bluetooth Speaker - Black"], ["price", 106.45], ["monthly", 8.0], ["imageString", "http://sem3-idn.s3-website-us-east-1.amazonaws.com/64bd93d097de4055f311e93d63cb7c76,0.jpg"], ["user_id", 1], ["created_at", "2017-06-16 02:26:35.539661"], ["updated_at", "2017-06-16 02:26:35.539661"]]
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 516ms (Views: 0.5ms | ActiveRecord: 7.3ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 19:28:54 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/UE-BOOM-Wireless-Bluetooth-Speaker/dp/B00CM0XHNS", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "proposals" ("item", "price", "monthly", "imageString", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["item", "UE - BOOM Wireless Bluetooth Speaker - Black"], ["price", 106.45], ["monthly", 8.0], ["imageString", "http://sem3-idn.s3-website-us-east-1.amazonaws.com/64bd93d097de4055f311e93d63cb7c76,0.jpg"], ["user_id", 1], ["created_at", "2017-06-16 02:28:54.582174"], ["updated_at", "2017-06-16 02:28:54.582174"]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 486ms (Views: 0.4ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-15 19:29:16 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 19:29:22 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mProposal Load (0.4ms)[0m  [1m[34mSELECT  "proposals".* FROM "proposals" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (7538.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "db/development"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (200.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "db/development"[0m
+  [1m[35m (166.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "db/test"[0m
+  [1m[35m (440.8ms)[0m  [1m[35mCREATE DATABASE "db/development" ENCODING = 'utf8'[0m
+  [1m[35m (390.4ms)[0m  [1m[35mCREATE DATABASE "db/test" ENCODING = 'utf8'[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8115692404137957555);[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20170613161557)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (19.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "checking_acct" float, "savings_acct" float, "monthly" float, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170613161557"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateProposals (20170613162011)
+  [1m[35m (5.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.5ms)[0m  [1m[35mCREATE TABLE "proposals" ("id" bigserial primary key, "item" character varying, "price" float, "monthly" float, "months" float, "imageString" character varying, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_0224a90884"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE  INDEX  "index_proposals_on_user_id" ON "proposals"  ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170613162011"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateBuckets (20170613162406)
+  [1m[35m (5.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.0ms)[0m  [1m[35mCREATE TABLE "buckets" ("id" bigserial primary key, "item" character varying, "monthly" float, "price" float, "months" float, "imageString" character varying, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_1d8aa9e992"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE  INDEX  "index_buckets_on_user_id" ON "buckets"  ("user_id")[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170613162406"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-06-16 02:36:57.407708"], ["updated_at", "2017-06-16 02:36:57.407708"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8115692404137957555)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["first_name", "Frank"], ["created_at", "2017-06-16 02:37:24.117742"], ["updated_at", "2017-06-16 02:37:24.117742"]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 19:38:22 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/UE-BOOM-Wireless-Bluetooth-Speaker/dp/B00CM0XHNS", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (18.9ms)[0m  [1m[32mINSERT INTO "proposals" ("item", "price", "monthly", "imageString", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["item", "UE - BOOM Wireless Bluetooth Speaker - Black"], ["price", 106.45], ["monthly", 8.0], ["imageString", "http://sem3-idn.s3-website-us-east-1.amazonaws.com/64bd93d097de4055f311e93d63cb7c76,0.jpg"], ["user_id", 1], ["created_at", "2017-06-16 02:38:23.658200"], ["updated_at", "2017-06-16 02:38:23.658200"]]
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 611ms (Views: 0.5ms | ActiveRecord: 31.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-15 19:38:37 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 19:38:44 -0700
+Processing by ProposalsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.5ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 19:39:28 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"https://www.amazon.com/Presto-09020-Touch-Electric-Indoor/dp/B003WTKYAW/ref=sr_1_1?s=electronics&ie=UTF8&qid=1497580754&sr=1-1&keywords=grill", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "proposals" ("item", "price", "monthly", "imageString", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["item", "Presto 09020 Cool Touch Electric Indoor Grill [Black, 13\" L x 19.25\" W x 3\" H]"], ["price", 35.36], ["monthly", 8.0], ["imageString", "http://sem3-idn.s3-website-us-east-1.amazonaws.com/24c53125088dc8ed17e6bba4adaecd7f,0.jpg"], ["user_id", 1], ["created_at", "2017-06-16 02:39:28.895136"], ["updated_at", "2017-06-16 02:39:28.895136"]]
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 496ms (Views: 0.3ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 19:40:56 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 19:41:01 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.4ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 19:41:27 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.5ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 19:41:51 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 19:42:31 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 19:42:45 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 19:42:52 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 19:48:57 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/proposals/url" for 127.0.0.1 at 2017-06-15 19:49:35 -0700
+Processing by ProposalsController#url as */*
+  Parameters: {"url"=>"http://www.bestbuy.com/site/beats-by-dr-dre-beats-studio-wireless-over-the-ear-headphones-black/3044852.p?skuId=3044852&extStoreId=&ref=212&loc=DWA&ksid=6e5d8c76-341f-43ee-a4bd-c4769d298594&ksprof_id=3&ksaffcode=pg233472&ksdevice=c&lsft=ref:212,loc:2&gclid=CjwKEAjw4IjKBRDr6p752cCUm3kSJAC-eqRtva8PsyfC9Vo2w-iahzlVVCtHeeruUsFIeidZ-kl5jBoCGLnw_wcB", "user_id"=>"1", "proposal"=>{"user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "proposals" ("item", "price", "monthly", "imageString", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["item", "Beats Studio Wireless Over-Ear Headphone - Matte Black [Matte Black, Standard Packaging]"], ["price", 199.99], ["monthly", 8.0], ["imageString", "http://sem3-idn.s3-website-us-east-1.amazonaws.com/e270d081808a6f6bb61cf4e49f56a047,0.jpg"], ["user_id", 1], ["created_at", "2017-06-16 02:49:36.493208"], ["updated_at", "2017-06-16 02:49:36.493208"]]
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 552ms (Views: 0.3ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 19:49:42 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 19:50:18 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 19:52:20 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 19:52:35 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 19:52:42 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 19:53:05 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 19:53:18 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.4ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 19:53:20 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.5ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 19:53:24 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.4ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 19:54:24 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.4ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 19:56:00 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 19:56:03 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.5ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 19:56:48 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 19:57:10 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 19:59:42 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:03:03 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.5ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:03:20 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.5ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:03:36 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:03:40 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.5ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:05:27 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:05:36 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.4ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:06:35 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.5ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:06:40 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:06:56 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:06:58 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:07:00 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.4ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:09:52 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:10:15 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:13:11 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.5ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:13:49 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:13:54 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:13:55 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.4ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:29:11 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.4ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:29:20 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:29:54 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:30:02 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:30:05 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:32:30 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:32:35 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:32:37 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:32:56 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:33:25 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:33:32 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 20:33:35 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>8, "monthly"=>25, "imageString"=>"http://sem3-idn.s3-website-us-east-1.amazonaws.com/e270d081808a6f6bb61cf4e49f56a047,0.jpg", "item"=>"Beats Studio Wireless Over-Ear Headphone - Matte Black [Matte Black, Standard Packaging]", "price"=>199.99}, "user"=>{}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (8.6ms)[0m  [1m[32mINSERT INTO "buckets" ("item", "monthly", "price", "months", "imageString", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["item", "Beats Studio Wireless Over-Ear Headphone - Matte Black [Matte Black, Standard Packaging]"], ["monthly", 25.0], ["price", 199.99], ["months", 8.0], ["imageString", "http://sem3-idn.s3-website-us-east-1.amazonaws.com/e270d081808a6f6bb61cf4e49f56a047,0.jpg"], ["user_id", 1], ["created_at", "2017-06-16 03:33:35.700806"], ["updated_at", "2017-06-16 03:33:35.700806"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 28ms (Views: 0.6ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:33:44 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:35:11 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:50:59 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.4ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:51:01 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:52:19 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.5ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:52:21 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:52:34 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:52:43 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 20:53:10 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>4, "monthly"=>46.07, "imageString"=>"http://sem3-idn.s3-website-us-east-1.amazonaws.com/e270d081808a6f6bb61cf4e49f56a047,0.jpg", "item"=>"Beats Studio Wireless Over-Ear Headphone - Matte Black [Matte Black, Standard Packaging]", "price"=>199.99}, "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "buckets" ("item", "monthly", "price", "months", "imageString", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["item", "Beats Studio Wireless Over-Ear Headphone - Matte Black [Matte Black, Standard Packaging]"], ["monthly", 46.07], ["price", 199.99], ["months", 4.0], ["imageString", "http://sem3-idn.s3-website-us-east-1.amazonaws.com/e270d081808a6f6bb61cf4e49f56a047,0.jpg"], ["user_id", 1], ["created_at", "2017-06-16 03:53:10.234361"], ["updated_at", "2017-06-16 03:53:10.234361"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 20:53:14 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.4ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mBucket Load (0.4ms)[0m  [1m[34mSELECT  "buckets".* FROM "buckets" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mBucket Load (0.4ms)[0m  [1m[34mSELECT  "buckets".* FROM "buckets" LIMIT $1[0m  [["LIMIT", 11]]
