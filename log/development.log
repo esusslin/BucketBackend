@@ -6796,3 +6796,1003 @@ Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.4ms)
 
   [1m[36mBucket Load (0.4ms)[0m  [1m[34mSELECT  "buckets".* FROM "buckets" LIMIT $1[0m  [["LIMIT", 11]]
   [1m[36mBucket Load (0.4ms)[0m  [1m[34mSELECT  "buckets".* FROM "buckets" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 21:48:25 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 16ms (Views: 9.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 21:48:27 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 21:48:38 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>9, "monthly"=>3.84, "imageString"=>"http://sem3-idn.s3-website-us-east-1.amazonaws.com/24c53125088dc8ed17e6bba4adaecd7f,0.jpg", "item"=>"Presto 09020 Cool Touch Electric Indoor Grill [Black, 13\" L x 19.25\" W x 3\" H]", "price"=>35.36}, "user"=>{}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "buckets" ("item", "monthly", "price", "months", "imageString", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["item", "Presto 09020 Cool Touch Electric Indoor Grill [Black, 13\" L x 19.25\" W x 3\" H]"], ["monthly", 3.84], ["price", 35.36], ["months", 9.0], ["imageString", "http://sem3-idn.s3-website-us-east-1.amazonaws.com/24c53125088dc8ed17e6bba4adaecd7f,0.jpg"], ["user_id", 1], ["created_at", "2017-06-16 04:48:38.625199"], ["updated_at", "2017-06-16 04:48:38.625199"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 27ms (Views: 0.5ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 21:48:41 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 21:49:26 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.4ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 21:49:39 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 21:49:44 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>3, "monthly"=>27.19, "imageString"=>"http://sem3-idn.s3-website-us-east-1.amazonaws.com/64bd93d097de4055f311e93d63cb7c76,0.jpg", "item"=>"UE - BOOM Wireless Bluetooth Speaker - Black", "price"=>106.45}, "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buckets" ("item", "monthly", "price", "months", "imageString", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["item", "UE - BOOM Wireless Bluetooth Speaker - Black"], ["monthly", 27.19], ["price", 106.45], ["months", 3.0], ["imageString", "http://sem3-idn.s3-website-us-east-1.amazonaws.com/64bd93d097de4055f311e93d63cb7c76,0.jpg"], ["user_id", 1], ["created_at", "2017-06-16 04:49:44.648791"], ["updated_at", "2017-06-16 04:49:44.648791"]]
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 11ms (Views: 0.7ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 21:49:49 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 21:49:51 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  Rendering buckets/index.html.erb within layouts/application
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered buckets/index.html.erb within layouts/application (103.9ms)
+Completed 500 Internal Server Error in 130ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `bucket_path' for #<#<Class:0x007fe36fa54218>:0x007fe36fa4e548>
+Did you mean?  buckets_hello_path):
+    16:       <tr>
+    17:         <td><%= bucket.item %></td>
+    18:         <td><%= bucket.user %></td>
+    19:         <td><%= link_to 'Show', bucket %></td>
+    20:         <td><%= link_to 'Edit', edit_bucket_path(bucket) %></td>
+    21:         <td><%= link_to 'Destroy', bucket, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    22:       </tr>
+  
+app/views/buckets/index.html.erb:19:in `block in _app_views_buckets_index_html_erb___3552863766335448984_70307403704280'
+app/views/buckets/index.html.erb:15:in `_app_views_buckets_index_html_erb___3552863766335448984_70307403704280'
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 21:50:51 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.4ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 25ms (Views: 13.2ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 21:50:53 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.2ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 15ms (Views: 10.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 21:51:11 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.2ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 21:51:14 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.2ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 21:51:17 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.4ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 22:00:51 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 22:00:59 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 22:01:10 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>8, "monthly"=>15.9, "imageString"=>"http://sem3-idn.s3-website-us-east-1.amazonaws.com/64bd93d097de4055f311e93d63cb7c76,0.jpg", "item"=>"UE - BOOM Wireless Bluetooth Speaker - Black", "price"=>106.45}, "user"=>{}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "buckets" ("item", "monthly", "price", "months", "imageString", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["item", "UE - BOOM Wireless Bluetooth Speaker - Black"], ["monthly", 15.9], ["price", 106.45], ["months", 8.0], ["imageString", "http://sem3-idn.s3-website-us-east-1.amazonaws.com/64bd93d097de4055f311e93d63cb7c76,0.jpg"], ["user_id", 1], ["created_at", "2017-06-16 05:01:10.779925"], ["updated_at", "2017-06-16 05:01:10.779925"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 22:01:14 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 22:01:16 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 22:02:33 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 22:02:37 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 22:02:45 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 22:02:47 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 22:02:53 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>4, "monthly"=>8.26, "imageString"=>"http://sem3-idn.s3-website-us-east-1.amazonaws.com/24c53125088dc8ed17e6bba4adaecd7f,0.jpg", "item"=>"Presto 09020 Cool Touch Electric Indoor Grill [Black, 13\" L x 19.25\" W x 3\" H]", "price"=>35.36}, "user"=>{}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "buckets" ("item", "monthly", "price", "months", "imageString", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["item", "Presto 09020 Cool Touch Electric Indoor Grill [Black, 13\" L x 19.25\" W x 3\" H]"], ["monthly", 8.26], ["price", 35.36], ["months", 4.0], ["imageString", "http://sem3-idn.s3-website-us-east-1.amazonaws.com/24c53125088dc8ed17e6bba4adaecd7f,0.jpg"], ["user_id", 1], ["created_at", "2017-06-16 05:02:53.498822"], ["updated_at", "2017-06-16 05:02:53.498822"]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 22:02:58 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 22:03:01 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.8ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 22:36:32 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.4ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 22:38:27 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.4ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 22:38:30 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.4ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 22:38:36 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 22:38:40 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 22:38:42 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.2ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 22:38:49 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.4ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 22:38:53 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.2ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 22:43:12 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 22:43:28 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 22:43:29 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 22:43:33 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.4ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 22:43:34 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 22:43:45 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 22:43:48 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 22:43:50 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT  "proposals".* FROM "proposals" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 22:49:25 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 22:49:28 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 22:49:32 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 22:49:41 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.4ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 22:50:48 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 22:52:32 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 22:52:34 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 22:52:38 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 22:52:41 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 22:52:45 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 22:52:47 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 22:52:48 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.4ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:03:33 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:03:35 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.2ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:03:38 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.4ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:03:40 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:03:43 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.4ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:04:17 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:04:24 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.2ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:04:29 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.4ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:04:31 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:04:36 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:04:38 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.4ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:04:39 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.2ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:04:41 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.5ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:04:42 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.2ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:04:52 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.5ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:04:53 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.4ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:04:55 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.4ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:04:57 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.5ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:07:43 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 23:07:48 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>8, "monthly"=>4.42, "imageString"=>"http://sem3-idn.s3-website-us-east-1.amazonaws.com/24c53125088dc8ed17e6bba4adaecd7f,0.jpg", "item"=>"Presto 09020 Cool Touch Electric Indoor Grill [Black, 13\" L x 19.25\" W x 3\" H]", "price"=>35.36}, "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buckets" ("item", "monthly", "price", "months", "imageString", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["item", "Presto 09020 Cool Touch Electric Indoor Grill [Black, 13\" L x 19.25\" W x 3\" H]"], ["monthly", 4.42], ["price", 35.36], ["months", 8.0], ["imageString", "http://sem3-idn.s3-website-us-east-1.amazonaws.com/24c53125088dc8ed17e6bba4adaecd7f,0.jpg"], ["user_id", 1], ["created_at", "2017-06-16 06:07:48.734214"], ["updated_at", "2017-06-16 06:07:48.734214"]]
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 6.2ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 23:15:37 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>3, "monthly"=>9.86, "imageString"=>"http://sem3-idn.s3-website-us-east-1.amazonaws.com/24c53125088dc8ed17e6bba4adaecd7f,0.jpg", "item"=>"Presto 09020 Cool Touch Electric Indoor Grill [Black, 13\" L x 19.25\" W x 3\" H]", "price"=>35.36}, "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buckets" ("item", "monthly", "price", "months", "imageString", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["item", "Presto 09020 Cool Touch Electric Indoor Grill [Black, 13\" L x 19.25\" W x 3\" H]"], ["monthly", 9.86], ["price", 35.36], ["months", 3.0], ["imageString", "http://sem3-idn.s3-website-us-east-1.amazonaws.com/24c53125088dc8ed17e6bba4adaecd7f,0.jpg"], ["user_id", 1], ["created_at", "2017-06-16 06:15:37.844620"], ["updated_at", "2017-06-16 06:15:37.844620"]]
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:15:50 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.4ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:15:53 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:15:56 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.6ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:16:00 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:16:02 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.5ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:16:04 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:16:06 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:16:10 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:16:12 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:16:13 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:16:14 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:16:15 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.7ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:16:16 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 23:16:30 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>3, "monthly"=>28.75, "imageString"=>"http://sem3-idn.s3-website-us-east-1.amazonaws.com/64bd93d097de4055f311e93d63cb7c76,0.jpg", "item"=>"UE - BOOM Wireless Bluetooth Speaker - Black", "price"=>106.45}, "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buckets" ("item", "monthly", "price", "months", "imageString", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["item", "UE - BOOM Wireless Bluetooth Speaker - Black"], ["monthly", 28.75], ["price", 106.45], ["months", 3.0], ["imageString", "http://sem3-idn.s3-website-us-east-1.amazonaws.com/64bd93d097de4055f311e93d63cb7c76,0.jpg"], ["user_id", 1], ["created_at", "2017-06-16 06:16:30.092767"], ["updated_at", "2017-06-16 06:16:30.092767"]]
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:16:31 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:18:00 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:20:40 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.5ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:20:43 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:20:48 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:20:51 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:20:52 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:20:54 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:20:55 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.4ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:20:57 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.5ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:22:02 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:22:04 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:22:07 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.4ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:22:08 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:22:13 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:22:15 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:22:16 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:22:17 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:25:38 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:25:42 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:27:31 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.5ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:27:37 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:27:44 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.4ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:27:46 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:27:51 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.2ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:28:27 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:28:32 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.2ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:28:37 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:28:39 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:31:49 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:32:25 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.5ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:32:27 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:35:32 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.5ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:36:05 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.7ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:36:15 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.4ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:43:24 -0700
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:43:24 -0700
+Processing by BucketsController#index as */*
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.4ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mProposal Load (0.6ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 62ms (Views: 9.4ms | ActiveRecord: 52.5ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:45:46 -0700
+Processing by BucketsController#index as */*
+  Parameters: {"user_id"=>"1"}
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:45:46 -0700
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.8ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.8ms)
+
+
+  [1m[36mProposal Load (0.7ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:49:04 -0700
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:49:04 -0700
+Processing by BucketsController#index as */*
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mProposal Load (3.1ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 5ms (Views: 1.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:49:07 -0700
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:49:07 -0700
+Processing by BucketsController#index as */*
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mProposal Load (2.6ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/users/lol" for 127.0.0.1 at 2017-06-15 23:49:15 -0700
+Processing by UsersController#lol as */*
+  Parameters: {"bucket"=>{"months"=>4, "monthly"=>38.62, "imageString"=>"http://sem3-idn.s3-website-us-east-1.amazonaws.com/e270d081808a6f6bb61cf4e49f56a047,0.jpg", "item"=>"Beats Studio Wireless Over-Ear Headphone - Matte Black [Matte Black, Standard Packaging]", "price"=>199.99}, "user"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "buckets" ("item", "monthly", "price", "months", "imageString", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["item", "Beats Studio Wireless Over-Ear Headphone - Matte Black [Matte Black, Standard Packaging]"], ["monthly", 38.62], ["price", 199.99], ["months", 4.0], ["imageString", "http://sem3-idn.s3-website-us-east-1.amazonaws.com/e270d081808a6f6bb61cf4e49f56a047,0.jpg"], ["user_id", 1], ["created_at", "2017-06-16 06:49:15.696134"], ["updated_at", "2017-06-16 06:49:15.696134"]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:49:18 -0700
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:49:18 -0700
+Processing by BucketsController#index as */*
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  Parameters: {"user_id"=>"1"}
+  [1m[36mProposal Load (0.3ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mBucket Load (3.0ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/1/buckets" for 127.0.0.1 at 2017-06-15 23:54:22 -0700
+Started GET "/users/1/proposals" for 127.0.0.1 at 2017-06-15 23:54:22 -0700
+Processing by BucketsController#index as */*
+Processing by ProposalsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  Parameters: {"user_id"=>"1"}
+  [1m[36mBucket Load (0.3ms)[0m  [1m[34mSELECT "buckets".* FROM "buckets"[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mProposal Load (3.1ms)[0m  [1m[34mSELECT "proposals".* FROM "proposals"[0m
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 3.1ms)
+
+

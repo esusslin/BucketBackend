@@ -6,6 +6,8 @@ class BucketsController < ApplicationController
   # GET /buckets.json
   def index
     @buckets = Bucket.all
+
+    render json: @buckets
   end
 
 
