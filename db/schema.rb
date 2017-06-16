@@ -18,7 +18,9 @@ ActiveRecord::Schema.define(version: 20170613162406) do
   create_table "buckets", force: :cascade do |t|
     t.string "item"
     t.float "monthly"
+    t.float "price"
     t.float "months"
+    t.string "imageString"
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -27,8 +29,10 @@ ActiveRecord::Schema.define(version: 20170613162406) do
 
   create_table "proposals", force: :cascade do |t|
     t.string "item"
+    t.float "price"
     t.float "monthly"
     t.float "months"
+    t.string "imageString"
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
